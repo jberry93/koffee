@@ -1,0 +1,112 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+.jumbotron {
+    background-color: #3e2723;
+    color: white;
+}
+div.jumbotron>p {
+    color: white;
+}
+a {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+h1,
+p,
+h3 {
+    text-align: center;
+    color: black;
+}
+nav {
+    background-color: white;
+}
+button {
+    text-align: center;
+}
+div.container>h1 {
+    font-size: 64px;
+    text-align: center;
+    color: white;
+}
+div.container>h2 {
+    text-align: center;
+    color: white;
+}
+div.parallax>img {
+    height: 900px;
+    width: 1200px;
+}
+img {
+    padding: 10px;
+}
+img.icon {
+    height: 100px;
+    width: 100px;
+}
+a.brand-logo {
+    color: black;
+}
+.button-collapse {
+    color: black;
+}
+a.nav {
+    color: black;
+}
+li>a {
+    text-align: center;
+    color: black;
+}
+li>a>img {
+    height: 50px;
+    width: 50px;
+}
+.parallax-container {
+    text-align: center;
+    height: 350px;
+}
+div.blendscontainer,
+div.drinkscontainer {
+  padding: 20px;
+}
+.blend1name,
+.blend2name,
+.blend3name,
+.blend4name,
+.drink1name,
+.drink2name,
+.drink3name,
+.drink4name,
+.drink5name,
+.drink6name {
+  color: black;
+}
+.blend1desc,
+.blend2desc,
+.blend3desc,
+.blend4desc,
+.drink1desc,
+.drink2desc,
+.drink3desc,
+.drink4desc,
+.drink5desc,
+.drink6desc {
+  color: #919191;
+}
+.col-md-4,
+.col-md-3 {
+    padding: 20px;
+    text-align: center;
+}
+.col-md-3:hover,
+.col-md-4:hover {
+  opacity: 0.4;
+}
+footer {
+    padding: 20px;
+    background-color: #efefef;
+    text-align: center;
+}
+div.modal-footer {
+    text-align: center;
+}
