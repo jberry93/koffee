@@ -56,8 +56,8 @@ a.nav {
   color: black;
 }
 ul.right>li>a {
-  text-align: center;
-  color: black;
+    text-align: center;
+    color: black;
 }
 li>a>img {
   height: 50px;
@@ -67,9 +67,6 @@ li>a>img {
   text-align: center;
   height: 350px;
   width: 100%;
-}
-div.modal-content {
-  font-size: 14px;
 }
 div.parallax {
   width: 100%;

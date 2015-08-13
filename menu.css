@@ -55,7 +55,7 @@ a.nav {
   text-align: center;
   color: black;
 }
-li>a {
+ul.right>li>a {
   text-align: center;
   color: black;
 }
@@ -67,6 +67,13 @@ li>a>img {
   text-align: center;
   height: 300px;
 }
+footer {
+    padding: 20px;
+    background-color: #efefef;
+    text-align: center;
+}
+/* koffee2.html specific css ABOVE */
+/* menu.html specific css BELOW */
 div.blendscontainer,
 div.drinkscontainer {
   padding: 20px;
@@ -103,11 +110,6 @@ div.drinkscontainer {
 .col-md-3:hover,
 .col-md-4:hover {
   opacity: 0.4;
-}
-footer {
-  padding: 20px;
-  background-color: #efefef;
-  text-align: center;
 }
 div.modal-content {
   text-align: center;
