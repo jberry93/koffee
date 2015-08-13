@@ -51,9 +51,11 @@ a.brand-logo {
   color: black;
 }
 a.nav {
+  font-size: 14px;
+  text-align: center;
   color: black;
 }
-li>a {
+ul.right>li>a {
   text-align: center;
   color: black;
 }
@@ -66,6 +68,9 @@ li>a>img {
   height: 350px;
   width: 100%;
 }
+div.modal-content {
+  font-size: 14px;
+}
 div.parallax {
   width: 100%;
 }
@@ -76,8 +81,5 @@ div.parallax {
 footer {
   padding: 20px;
   background-color: #efefef;
-  text-align: center;
-}
-div.modal-footer {
   text-align: center;
 }

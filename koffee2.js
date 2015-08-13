@@ -4,8 +4,8 @@ $(document).ready(function(){
   $("ul.tabs").tabs();
   $(".modal-trigger").leanModal({
     dismissible: true,
-    opacity: .5,
-    in_duration: 300,
+    opacity: .3,
+    in_duration: 200,
     out_duration: 200,
   });
 });

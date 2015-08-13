@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Koffee 2.0</title>
+    <title>Koffee</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="koffee2.css">
@@ -18,18 +19,18 @@
   <nav>
     <div class="container">
       <div class="nav-wrapper">
-        <a href="koffee2.html" class="brand-logo">Koffee 2.0</a>
+        <a href="koffee2.html" class="brand-logo">Koffee</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#" class="nav">About Us</a></li>
           <li><a href="#" class="nav">Careers</a></li>
           <li><a href="#" class="nav">Location</a></li>
-          <li><a href="#" class="nav">Sign Up</a></li>
+          <li><a href="#modal" class="nav modal-trigger">Sign Up</a></li>
         </ul>
         <ul id="slide-out" class="side-nav">
           <li><a href="#" class="nav">About Us</a></li>
           <li><a href="#" class="nav">Careers</a></li>
           <li><a href="#" class="nav">Location</a></li>
-          <li><a href="#" class="nav">Sign Up</a></li>
+          <li><a href="#modal" class="nav modal-trigger">Sign Up</a></li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>
@@ -65,19 +66,17 @@
         <h1>Membership</h1>
         <h2>With great service comes a great membership</h2>
         <br><br>
-        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Sign Up</a>
-        <div id="modal1" class="modal modal-fixed-footer">
+        <a class="btn modal-trigger" href="#modal">Sign Up</a>
+        <!-- Modal BEGIN -->
+        <div id="modal" class="modal modal-fixed-footer">
           <div class="modal-content">
+            <!-- Form BEGIN -->
             <div class="row">
               <form class="col s12">
                 <div class="row">
-                  <div class="input-field col s6">
-                    <input id="first_name" type="text" class="validate">
-                    <label for="first_name">First Name</label>
-                  </div>
-                  <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Last Name</label>
+                  <div class="input-field col s12">
+                    <input id="username" type="text" class="validate">
+                    <label for="username">Username</label>
                   </div>
                 </div>
                 <div class="row">
@@ -92,13 +91,15 @@
                     <label for="password">Password</label>
                   </div>
                 </div>
+                <button class="btn waves-effect waves-light modal-close" type="submit" name="action">
+                  Submit  <i class="material-icons">send</i>
+                </button>
               </form>
             </div>
-          </div>
-          <div class="modal-footer">
-            <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+            <!-- Form END -->
           </div>
         </div>
+        <!-- Modal END -->
       </div>
       <div class="parallax"><img src="images/coffeebean.jpg"></div>
     </div>
@@ -112,6 +113,7 @@
             <li><a href="#">Our Story</a></li>
             <li><a href="#">Delivery Coverage</a></li>
             <li><a href="#">Redeem Points</a></li>
+            <li><a href="style-sheet.html">Styleguide</a></li>
           </ul>
         </div>
         <div class="col-md-4">
