@@ -8,4 +8,8 @@ $(document).ready(function(){
     in_duration: 200,
     out_duration: 200,
   });
+  $(".datepicker").pickadate({
+    selectMonths: true,
+    selectYears: 15
+  });
 });
