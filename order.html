@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Order</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="order.css">
+    <script src="koffee2.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="koffee2.html" class="brand-logo">Koffee</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#" class="nav">About Us</a></li>
+            <li><a href="#" class="nav">Careers</a></li>
+            <li><a href="#" class="nav">Location</a></li>
+            <li><a href="koffee2.html" class="nav">Sign Out</a></li>
+          </ul>
+          <ul id="slide-out" class="side-nav">
+            <li><a href="#" class="nav">About Us</a></li>
+            <li><a href="#" class="nav">Careers</a></li>
+            <li><a href="#" class="nav">Location</a></li>
+            <li><a href="koffee2.html" class="nav">Sign Out</a></li>
+          </ul>
+          <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        </div>
+      </div>
+    </nav>
+    <form>
+      <h4>Select your drink</h4>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+          <p>
+            <input type="checkbox" id="tokyo">
+            <label for="tokyo">Tokyo Latte ($3.75)</label>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>
+            <input type="checkbox" id="american">
+            <label for="american">The American ($3)</label>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>
+            <input type="checkbox" id="jonsnow">
+            <label for="jonsnow">Jon Snow ($3.5)</label>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>
+            <input type="checkbox" id="beanbag">
+            <label for="beanbag">Bean Bag ($2)</label>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>
+            <input type="checkbox" id="apple">
+            <label for="apple">Apple of Eden ($2)</label>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+          <p>
+            <input type="checkbox" id="4leaf">
+            <label for="4leaf">4 Leaf Clover ($5.5)</label>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>
+            <input type="checkbox" id="moka">
+            <label for="moka">Mokaccino ($4)</label>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>
+            <input type="checkbox" id="caphe">
+            <label for="caphe">Càphê ($4.5)</label>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>
+            <input type="checkbox" id="chako">
+            <label for="chako">Chako ($3)</label>
+          </p>
+        </div>
+        <div class="col-md-2">
+          <p>
+            <input type="checkbox" id="redfern">
+            <label for="redfern">Red Fern ($3)</label>
+          </p>
+        </div>
+      </div>
+      <hr>
+      <h4>Quantity</h4>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Tokyo Latte</label>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>The American</label>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Jon Snow</label>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Bean Bag</label>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Apple of Eden</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-md-offset-1">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>4 Leaf Clover</label>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Mokaccino</label>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Càphê</label>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Chako</label>
+        </div>
+        <div class="col-md-2">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Red Fern</label>
+        </div>
+      </div>
+    </form>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Basics</h5>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Delivery Coverage</a></li>
+            <li><a href="#">Redeem Points</a></li>
+            <li><a href="style-sheet.html">Styleguide</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Social</h5>
+          <ul>
+            <li><a href="#"><img src="images/facebook2.svg"></a></li>
+            <li><a href="#"><img class="twitter" src="images/twitter.svg"></a></li>
+            <li><a href="#"><img class="linkedin" src="images/linkedin.svg"></a></li>
+            <li><a href="#"><img class="google+" src="images/google-plus.svg"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>Icons made by <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+    <div>Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+    <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+  </footer>
+</html>
