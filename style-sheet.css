@@ -1,0 +1,48 @@
+body {
+  color: #3e2723;
+  background-color: #efefef;
+}
+.jumbotron {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+}
+p.roboto {
+  font-family: "Roboto", sans-serif;
+}
+div.white {
+  height: 90px;
+  width: 90px;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+div.black {
+  height: 90px;
+  width: 90px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+div.brown {
+  height: 90px;
+  width: 90px;
+  background-color: #3e2723;
+  color: white;
+  text-align: center;
+}
+.col-md-6 {
+  padding: 5px;
+}
+.col-md-6>div {
+  border-radius: 30px;
+  padding: 10px;
+  display: inline-block;
+}
