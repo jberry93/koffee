@@ -108,7 +108,7 @@ div.drinkscontainer {
   text-align: center;
 }
 .col-md-3:hover,
-.col-md-4:hover {
+div.drink:hover {
   opacity: 0.4;
 }
 div.modal-content {
