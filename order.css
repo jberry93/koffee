@@ -9,6 +9,7 @@ div.jumbotron>p {
   color: white;
 }
 a {
+  color: black;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
@@ -79,6 +80,9 @@ footer {
   padding: 20px;
   background-color: #efefef;
   text-align: center;
+}
+a:hover {
+  text-decoration: none;
 }
 /* koffee2.html specific css ABOVE */
 /* order.html specific css BELOW */

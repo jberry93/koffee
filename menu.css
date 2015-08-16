@@ -9,6 +9,7 @@ div.jumbotron>p {
   color: white;
 }
 a {
+  color: black;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
@@ -110,6 +111,9 @@ div.drinkscontainer {
 .col-md-3:hover,
 div.drink:hover {
   opacity: 0.4;
+}
+a:hover {
+  text-decoration: none;
 }
 div.modal-content {
   text-align: center;

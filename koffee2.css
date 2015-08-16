@@ -9,6 +9,7 @@ div.jumbotron>p {
   color: white;
 }
 a {
+  color: black;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
@@ -54,6 +55,9 @@ a.nav {
   font-size: 14px;
   text-align: center;
   color: black;
+}
+a:hover {
+  text-decoration: none;
 }
 ul.right>li>a {
     text-align: center;
