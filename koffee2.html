@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="koffee2.css">
@@ -70,35 +70,27 @@
         <br><br>
         <a class="btn modal-trigger" href="#modal">Sign Up</a>
         <!-- Modal BEGIN -->
-        <div id="modal" class="modal modal-fixed-footer">
-          <div class="modal-content">
-            <!-- Form BEGIN -->
-            <div class="row">
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="username" type="text" class="validate">
-                    <label for="username">Username</label>
-                  </div>
+        <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="aModal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <!-- Form BEGIN -->
+              <form>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username">
                 </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                  </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
                 </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Password</label>
-                  </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password">
                 </div>
-                <a class="btn waves-effect waves-light modal-close" href="order.html">
-                  Submit<i class="material-icons right">send</i>
-                </a>
               </form>
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+              <!-- Form END -->
             </div>
-            <!-- Form END -->
           </div>
         </div>
         <!-- Modal END -->

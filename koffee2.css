@@ -22,6 +22,10 @@ h3 {
 nav {
   background-color: white;
 }
+div.modal-body {
+    transform: translate(0,40%);
+    text-align: center;
+}
 button {
   text-align: center;
 }
