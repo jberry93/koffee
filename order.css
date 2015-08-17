@@ -66,7 +66,7 @@ li>a>img {
 }
 .parallax-container {
   text-align: center;
-  height: 350px;
+  height: 300px;
   width: 100%;
 }
 div.parallax {
@@ -96,5 +96,5 @@ label,
   margin: 20px;
 }
 h4 {
-  margin: 20px;
+  text-align: center;
 }
