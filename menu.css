@@ -1,17 +1,13 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
+body { font-family: "Roboto", sans-serif; }
 .jumbotron {
   background-color: #3e2723;
   color: white;
 }
-div.jumbotron>p {
-  color: white;
-}
+div.jumbotron>p { color: white; }
 a {
-  color: black;
-  font-size: 14px;
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: black;
 }
 h1,
 p,
@@ -19,16 +15,12 @@ h3 {
   text-align: center;
   color: black;
 }
-nav {
-  background-color: white;
-}
+nav { background-color: white; }
 div.modal-body {
     transform: translate(0,40%);
     text-align: center;
 }
-button {
-  text-align: center;
-}
+button { text-align: center; }
 div.container>h1 {
   font-size: 64px;
   text-align: center;
@@ -42,19 +34,13 @@ div.parallax>img {
   height: 900px;
   width: 1200px;
 }
-img {
-  padding: 10px;
-}
+img { padding: 10px; }
 img.icon {
   height: 100px;
   width: 100px;
 }
-a.brand-logo {
-  color: black;
-}
-.button-collapse {
-  color: black;
-}
+a.brand-logo { color: black; }
+.button-collapse { color: black; }
 a.nav {
   font-size: 14px;
   text-align: center;
@@ -73,16 +59,14 @@ li>a>img {
   height: 300px;
 }
 footer {
-    padding: 20px;
-    background-color: #efefef;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
+  background-color: #efefef;
 }
 /* koffee2.html specific css ABOVE */
 /* menu.html specific css BELOW */
 div.blendscontainer,
-div.drinkscontainer {
-  padding: 20px;
-}
+div.drinkscontainer { padding: 20px; }
 .blend1name,
 .blend2name,
 .blend3name,
