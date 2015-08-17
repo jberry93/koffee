@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Koffee</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="koffee2.css">
+    <script src="koffee2.js"></script>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="koffee2.html" class="brand-logo">Koffee</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#" class="nav">About Us</a></li>
+              <li><a href="#" class="nav">Careers</a></li>
+              <li><a href="#" class="nav">Location</a></li>
+              <li><a href="#modal" class="nav modal-trigger">Sign Up</a></li>
+            </ul>
+            <ul id="slide-out" class="side-nav">
+              <li><a href="#" class="nav">About Us</a></li>
+              <li><a href="#" class="nav">Careers</a></li>
+              <li><a href="#" class="nav">Location</a></li>
+              <li><a href="#modal" class="nav modal-trigger">Sign Up</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="jumbotron">
+      <h1>Koffee Delivery</h1>
+      <p>A delivery service for caffeine addicts who are constantly busy</p>
+      <p><a class="btn btn-primary waves-effect" href="menu.html" role="button">Menu</a></p>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="icon" src="images/student.svg">
+          <h3>Want to stay in the zone?</h3>
+          <p>Don't ever worry about having to exit the zone again! Take a moment to fill out your order and we will do the rest</p>
+        </div>
+        <div class="col-md-4">
+          <img class="icon" src="images/work6.svg">
+          <h3>Want to keep the coffee coming?</h3>
+          <p>Become a member to keep the coffee coming! Don't waste any time wondering if you placed your order</p>
+        </div>
+        <div class="col-md-4">
+          <img class="icon" src="images/coffee124.svg">
+          <h3>Want to order just one drink?</h3>
+          <p>There is no minimum amount of coffee that must be purchased for delivery! Order for yourself or for your whole office</p>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="container">
+        <br><br>
+        <h1>Membership</h1>
+        <h2>With great service comes a great membership</h2>
+        <br><br>
+        <a class="btn modal-trigger" href="#modal">Sign Up</a>
+        <!-- Modal BEGIN -->
+        <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="aModal">
+          <div class="modal-dialog" role="document">
+            <div class="modal-body">
+              <!-- Form BEGIN -->
+              <form>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+              </form>
+              <a href="order.html"><button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button></a>
+              <!-- Form END -->
+            </div>
+          </div>
+        </div>
+        <!-- Modal END -->
+      </div>
+      <div class="parallax"><img src="images/coffeebean.jpg"></div>
+    </div>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Basics</h5>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Delivery Coverage</a></li>
+            <li><a href="#">Redeem Points</a></li>
+            <li><a href="style-sheet.html">Styleguide</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Social</h5>
+          <ul>
+            <li><a href="#"><img src="images/facebook2.svg"></a></li>
+            <li><a href="#"><img class="twitter" src="images/twitter.svg"></a></li>
+            <li><a href="#"><img class="linkedin" src="images/linkedin.svg"></a></li>
+            <li><a href="#"><img class="google+" src="images/google-plus.svg"></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div>Icons made by <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+    <div>Icons made by <a href="http://www.flaticon.com/authors/bogdan-rosu" title="Bogdan Rosu">Bogdan Rosu</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+    <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+  </footer>
+</html>
