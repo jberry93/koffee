@@ -68,6 +68,7 @@ li>a>img {
   text-align: center;
   height: 300px;
   width: 100%;
+  background-color: rgba(0,0,0,0.2);
 }
 div.parallax {
   width: 100%;
@@ -84,16 +85,19 @@ footer {
 a:hover {
   text-decoration: none;
 }
-/* koffee2.html specific css ABOVE */
+/* default.css ABOVE */
 /* order.html specific css BELOW */
 label,
 .col-md-2>p>label {
   color: black;
   font-size: 12px;
 }
-.col-md-2 {
+.col-lg-2,
+.col-md-2,
+.col-sm-2,
+.col-xs-2 {
+  margin: 11px;
   text-align: center;
-  margin: 20px;
 }
 h4 {
   text-align: center;
