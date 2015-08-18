@@ -41,7 +41,7 @@ img.icon {
 }
 a.brand-logo,
 .button-collapse { color: black; }
-a.nav {
+li>a.nav {
   font-size: 14px;
   text-align: center;
   color: black;
