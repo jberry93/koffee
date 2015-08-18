@@ -63,32 +63,16 @@ footer {
   text-align: center;
   background-color: #efefef;
 }
-/* koffee2.html specific css ABOVE */
+/* default.css ABOVE */
 /* menu.html specific css BELOW */
-div.blendscontainer,
-div.drinkscontainer { padding: 20px; }
-.blend1name,
-.blend2name,
-.blend3name,
-.blend4name,
-.drink1name,
-.drink2name,
-.drink3name,
-.drink4name,
-.drink5name,
-.drink6name {
+div.blends,
+div.drinks { padding: 20px; }
+.blendName,
+.drinkName {
   color: black;
 }
-.blend1desc,
-.blend2desc,
-.blend3desc,
-.blend4desc,
-.drink1desc,
-.drink2desc,
-.drink3desc,
-.drink4desc,
-.drink5desc,
-.drink6desc {
+.blendDesc,
+.drinkDesc {
   color: #919191;
 }
 .col-md-4,
