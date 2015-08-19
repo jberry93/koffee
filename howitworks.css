@@ -1,0 +1,76 @@
+body { font-family: "Roboto", sans-serif; }
+.jumbotron {
+  background-color: #3e2723;
+  color: white;
+}
+div.jumbotron>p { color: white; }
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: black;
+}
+h1,
+p,
+h3 {
+  text-align: center;
+  color: black;
+}
+nav { background-color: white; }
+div.modal-body {
+  transform: translate(0,40%);
+  text-align: center;
+}
+button { text-align: center; }
+div.container>h1 {
+  font-size: 64px;
+  text-align: center;
+  color: white;
+}
+div.container>h2 {
+  text-align: center;
+  color: white;
+}
+div.parallax>img {
+  height: 900px;
+  width: 1200px;
+}
+img { padding: 10px; }
+img.icon {
+  height: 100px;
+  width: 100px;
+}
+a.brand-logo,
+.button-collapse { color: black; }
+li>a.nav {
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+}
+a:hover { text-decoration: none; }
+ul.right>li>a {
+  text-align: center;
+  color: black;
+}
+li>a>img {
+  height: 50px;
+  width: 50px;
+}
+.parallax-container {
+  text-align: center;
+  height: 350px;
+  width: 100%;
+}
+div.parallax { width: 100%; }
+.col-md-4 {
+  padding: 10px;
+  text-align: center;
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #efefef;
+}
+/* default CSS above */
+/* howitworks CSS below */
