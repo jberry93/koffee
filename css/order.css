@@ -108,9 +108,49 @@ label,
 .col-md-2,
 .col-sm-2,
 .col-xs-2 {
-  margin: 11px;
   text-align: center;
 }
 h4 {
   text-align: center;
+}
+form {
+  text-align: center;
+}
+.submitbtn {
+  height: 50px;
+  width: 100px;
+}
+@media (max-width: 991px) {
+  .row {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 853px) {
+  .row {
+    margin-left: 110px;
+  }
+  select.form-control {
+    width: 80px;
+  }
+}
+@media (max-width: 640px) {
+  .row {
+    margin-left: 60px;
+  }
+  select.form-control {
+    width: 50px;
+  }
+}
+@media (max-width: 426px) {
+  .row {
+    margin-left: 30px;
+    width: 100%;
+    overflow: auto;
+  }
+  [type="checkbox"]+label {
+    padding-left: 25px;
+  }
+  select.form-control {
+    width: 40px;
+  }
 }
