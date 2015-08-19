@@ -66,6 +66,15 @@ footer {
   text-align: center;
   background-color: #efefef;
 }
+input[type=text],
+input[type=email],
+input[type=password] {
+    text-align: center;
+    font-size: 14px;
+}
+label {
+    font-size: 16px;
+}
 /* default.css ABOVE */
 /* menu.html specific css BELOW */
 div.blends,
