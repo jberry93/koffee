@@ -76,18 +76,18 @@ footer {
 input[type=text],
 input[type=email],
 input[type=password] {
-    text-align: center;
-    font-size: 14px;
+  text-align: center;
+  font-size: 14px;
 }
 label {
-    font-size: 16px;
+  font-size: 16px;
 }
 .submitbtn {
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
-    color: white;
-    background-color: #1BBC9B;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  background-color: #1BBC9B;
 }
 /* default.css above */
 /* career CSS below */

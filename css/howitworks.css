@@ -85,11 +85,11 @@ label {
     font-size: 16px;
 }
 .submitbtn {
-    height: 50px;
-    width: 100px;
-    border-radius: 10px;
-    color: white;
-    background-color: #1BBC9B;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  color: white;
+  background-color: #1BBC9B;
 }
 /* default CSS above */
 /* howitworks CSS below */
@@ -106,7 +106,4 @@ div>h4 {
 }
 div.col-xs-6.col-sm-6.col-md-6.col-lg-6>p {
   text-align: center;
-}
-div.container>div.row>div.col-xs-6.col-sm-6.col-md-6.col-lg-6 {
-  /*width: 1000px;*/
 }
