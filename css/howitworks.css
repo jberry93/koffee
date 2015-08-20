@@ -84,6 +84,13 @@ input[type=password] {
 label {
     font-size: 16px;
 }
+.submitbtn {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: #1BBC9B;
+}
 /* default CSS above */
 /* howitworks CSS below */
 .col-xs-6,

@@ -97,6 +97,13 @@ input[type=number] {
 label {
   font-size: 16px;
 }
+.submitbtn {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: #1BBC9B;
+}
 /* default.css ABOVE */
 /* order.html specific css BELOW */
 label,
@@ -115,10 +122,6 @@ h4 {
 }
 form {
   text-align: center;
-}
-.submitbtn {
-  height: 50px;
-  width: 100px;
 }
 @media (max-width: 991px) {
   .row {
