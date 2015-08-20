@@ -34,7 +34,10 @@ div.parallax>img {
   height: 900px;
   width: 1200px;
 }
-img { padding: 10px; }
+img {
+  height: 150px;
+  padding: 10px;
+}
 img.icon {
   height: 100px;
   width: 100px;
@@ -83,3 +86,20 @@ label {
 }
 /* default CSS above */
 /* howitworks CSS below */
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6 {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+div>h4 {
+  padding-top: 15px;
+}
+div.col-xs-6.col-sm-6.col-md-6.col-lg-6>p {
+  text-align: center;
+}
+div.container>div.row>div.col-xs-6.col-sm-6.col-md-6.col-lg-6 {
+  /*width: 1000px;*/
+}
