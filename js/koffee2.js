@@ -6,7 +6,7 @@ $(document).ready(function(){
     dismissible: true,
     opacity: .3,
     in_duration: 200,
-    out_duration: 200,
+    out_duration: 200
   });
   $(".datepicker").pickadate({
     selectMonths: true,
