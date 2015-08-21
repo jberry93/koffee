@@ -88,3 +88,6 @@ label {
   color: white;
   background-color: #1BBC9B;
 }
+ul.social {
+  display: inline-flex;
+}

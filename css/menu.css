@@ -82,6 +82,9 @@ label {
   color: white;
   background-color: #1BBC9B;
 }
+ul.social {
+  display: inline-flex;
+}
 /* default.css ABOVE */
 /* menu.html specific css BELOW */
 div.blends,

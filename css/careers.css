@@ -89,6 +89,9 @@ label {
   color: white;
   background-color: #1BBC9B;
 }
+ul.social {
+  display: inline-flex;
+}
 /* default.css above */
 /* career CSS below */
 img.career {

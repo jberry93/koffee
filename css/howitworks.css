@@ -91,6 +91,9 @@ label {
   color: white;
   background-color: #1BBC9B;
 }
+ul.social {
+  display: inline-flex;
+}
 /* default CSS above */
 /* howitworks CSS below */
 .col-xs-6,
