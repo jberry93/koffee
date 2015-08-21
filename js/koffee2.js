@@ -5,11 +5,7 @@ $(document).ready(function(){
   $(".modal-trigger").leanModal({
     dismissible: true,
     opacity: .3,
-    in_duration: 200,
-    out_duration: 200
-  });
-  $(".datepicker").pickadate({
-    selectMonths: true,
-    selectYears: 15
+    in_duration: 50,
+    out_duration: 50
   });
 });
