@@ -61,6 +61,7 @@ li>a>img {
   text-align: center;
   height: 350px;
   width: 100%;
+  background-color: rgba(0,0,0,0.5);
 }
 div.parallax { width: 100%; }
 .col-md-4 {
