@@ -15,6 +15,9 @@ h3 {
   text-align: center;
   color: black;
 }
+p {
+  font-weight: 300;
+}
 nav { background-color: white; }
 div.modal-body {
   transform: translate(0,40%);
