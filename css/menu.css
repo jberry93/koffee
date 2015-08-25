@@ -1,3 +1,4 @@
+/* default CSS BEGIN */
 body { font-family: "Roboto", sans-serif; }
 .jumbotron {
   background-color: #3e2723;
@@ -16,7 +17,7 @@ h3 {
   color: black;
 }
 nav { background-color: white; }
-div.modal-body {
+.modal-body {
   transform: translate(0,40%);
   text-align: center;
 }
@@ -35,7 +36,7 @@ div.parallax>img {
   width: 1200px;
 }
 img { padding: 10px; }
-img.icon {
+.icon {
   height: 100px;
   width: 100px;
 }
@@ -85,8 +86,8 @@ label {
 ul.social {
   display: inline-flex;
 }
-/* default.css ABOVE */
-/* menu.html specific css BELOW */
+/* default CSS END */
+/* menu CSS BEGIN */
 div.blends,
 div.drinks { padding: 20px; }
 .blendName,
@@ -109,3 +110,4 @@ div.drink:hover {
 a:hover {
   text-decoration: none;
 }
+/* menu CSS END */

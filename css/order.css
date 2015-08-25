@@ -1,3 +1,4 @@
+/* default CSS BEGIN */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -107,8 +108,8 @@ label {
 ul.social {
   display: inline-flex;
 }
-/* default.css ABOVE */
-/* order.html specific css BELOW */
+/* default CSS END */
+/* order CSS BEGIN */
 label,
 .col-md-2>p>label {
   color: black;
@@ -160,3 +161,4 @@ form {
     width: 40px;
   }
 }
+/* order CSS END */
