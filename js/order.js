@@ -7,19 +7,19 @@ $(document).ready(function(){
   $(".show2").hide();
   $(".show3").hide();
   $(".show1").click(function(){
-    $("#quant1").show();
-    $("#quant2").show();
+    $("#quant1").show(200);
+    $("#quant2").show(200);
     $(".show1").hide();
-    $(".show2").show();
+    $(".show2").show(200);
   });
   $(".show2").click(function(){
-    $("#delivery").show();
-    $(".show3").show();
+    $("#delivery").show(200);
+    $(".show3").show(200);
     $(".show2").hide();
   });
   $(".show3").click(function(){
-    $("#payment").show();
-    $(".submitbtn").show();
+    $("#payment").show(200);
+    $(".submitbtn").show(200);
     $(".show3").hide();
   });
 });
