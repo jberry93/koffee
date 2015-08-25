@@ -42,9 +42,10 @@
     </div>
     <br><br>
     <form action="orderconfirm.html" method="get">
+      <!-- Drink Selection BEGIN -->
       <h4>Select your drink</h4>
       <br>
-      <div class="row">
+      <div id="drink1" class="row">
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-md-offset-1">
           <p>
             <input type="checkbox" id="tokyo">
@@ -76,7 +77,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div id="drink2" class="row">
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-md-offset-1">
           <p>
             <input type="checkbox" id="4leaf">
@@ -108,10 +109,12 @@
           </p>
         </div>
       </div>
-      <hr>
+      <button class="show1 btn btn-primary">Submit</button>
+      <!-- Drink Selection END -->
+      <!-- Quantity BEGIN -->
       <h4>Quantity</h4>
       <br>
-      <div class="row">
+      <div id="quant1" class="row">
         <div class="col-md-2 col-sm-2 col-xs-2 col-md-offset-1">
           <select class="form-control">
             <option>0</option>
@@ -168,7 +171,7 @@
           <label>Apple of Eden</label>
         </div>
       </div>
-      <div class="row">
+      <div id="quant2" class="row">
         <div class="col-md-2 col-sm-2 col-xs-2 col-md-offset-1">
           <select class="form-control">
             <option>0</option>
@@ -225,10 +228,12 @@
           <label>Red Fern</label>
         </div>
       </div>
-      <hr>
+      <button class="show2 btn btn-primary">Submit</button>
+      <!-- Quantity END -->
+      <!-- Delivery Address BEGIN -->
       <h4>Delivery Address</h4>
       <br>
-      <div class="container">
+      <div id="delivery" class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
             <input type="text" class="validate" placeholder="Grumpy" required>
@@ -270,10 +275,12 @@
           </div>
         </div>
       </div>
-      <hr>
+      <button class="show3 btn btn-primary">Submit</button>
+      <!-- Delivery Address END -->
+      <!-- Payment Info BEGIN -->
       <h4>Payment Info</h4>
       <br>
-      <div class="container">
+      <div id="payment" class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
             <input type="number" class="validate" placeholder="XXXXXXXXXXXXXXXX" required>
@@ -321,6 +328,7 @@
         </div>
       </div>
       <br>
+      <!-- Payment Info END -->
       <input class="submitbtn" type="submit">
     </form>
     <br><br>
@@ -363,6 +371,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="../js/koffee2.js"></script>
+    <script src="../js/order.js"></script>
     <!-- Scripts END -->
   </body>
 </html>

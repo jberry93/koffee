@@ -1,0 +1,25 @@
+$(document).ready(function(){
+  $("#quant1").hide();
+  $("#quant2").hide();
+  $("#delivery").hide();
+  $("#payment").hide();
+  $(".submitbtn").hide();
+  $(".show2").hide();
+  $(".show3").hide();
+  $(".show1").click(function(){
+    $("#quant1").show();
+    $("#quant2").show();
+    $(".show1").hide();
+    $(".show2").show();
+  });
+  $(".show2").click(function(){
+    $("#delivery").show();
+    $(".show3").show();
+    $(".show2").hide();
+  });
+  $(".show3").click(function(){
+    $("#payment").show();
+    $(".submitbtn").show();
+    $(".show3").hide();
+  });
+});
