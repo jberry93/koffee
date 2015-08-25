@@ -19,7 +19,7 @@ p {
   font-weight: 300;
 }
 nav { background-color: white; }
-div.modal-body {
+.modal-body {
   transform: translate(0,40%);
   text-align: center;
 }
@@ -29,7 +29,7 @@ div.container>h1 {
   text-align: center;
   color: white;
 }
-div.container>h2 {
+h2 {
   text-align: center;
   color: white;
 }
@@ -38,13 +38,13 @@ div.parallax>img {
   width: 1200px;
 }
 img { padding: 10px; }
-img.icon {
+.icon {
   height: 100px;
   width: 100px;
 }
 a.brand-logo,
 .button-collapse { color: black; }
-li>a.nav {
+li>.nav {
   padding-right: 10px;
   padding-left: 10px;
   font-size: 14px;
@@ -52,7 +52,7 @@ li>a.nav {
   color: black;
 }
 a:hover { text-decoration: none; }
-ul.right>li>a {
+.right>li>a {
   text-align: center;
   color: black;
 }
@@ -92,6 +92,6 @@ label {
   color: white;
   background-color: #1BBC9B;
 }
-ul.social {
+.social {
   display: inline-flex;
 }
