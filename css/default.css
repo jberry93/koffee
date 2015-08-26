@@ -23,6 +23,7 @@ nav { background-color: white; }
 }
 button { text-align: center; }
 div.container>h1 {
+  padding: 10px;
   font-size: 64px;
   text-align: center;
   color: white;
