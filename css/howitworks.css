@@ -1,3 +1,4 @@
+/* default CSS BEGIN */
 body { font-family: "Roboto", sans-serif; }
 .jumbotron {
   background-color: #3e2723;
@@ -15,8 +16,9 @@ h3 {
   text-align: center;
   color: black;
 }
+p { font-weight: 300; }
 nav { background-color: white; }
-div.modal-body {
+.modal-body {
   transform: translate(0,40%);
   text-align: center;
 }
@@ -26,7 +28,7 @@ div.container>h1 {
   text-align: center;
   color: white;
 }
-div.container>h2 {
+h2 {
   text-align: center;
   color: white;
 }
@@ -34,17 +36,14 @@ div.parallax>img {
   height: 900px;
   width: 1200px;
 }
-img {
-  height: 150px;
-  padding: 10px;
-}
-img.icon {
+img { padding: 10px; }
+.icon {
   height: 100px;
   width: 100px;
 }
 a.brand-logo,
 .button-collapse { color: black; }
-li>a.nav {
+li>.nav {
   padding-right: 10px;
   padding-left: 10px;
   font-size: 14px;
@@ -52,7 +51,7 @@ li>a.nav {
   color: black;
 }
 a:hover { text-decoration: none; }
-ul.right>li>a {
+.right>li>a {
   text-align: center;
   color: black;
 }
@@ -64,6 +63,7 @@ li>a>img {
   text-align: center;
   height: 350px;
   width: 100%;
+  background-color: rgba(0,0,0,0.3);
 }
 div.parallax { width: 100%; }
 .col-md-4 {
@@ -78,24 +78,20 @@ footer {
 input[type=text],
 input[type=email],
 input[type=password] {
-    text-align: center;
-    font-size: 14px;
+  text-align: center;
+  font-size: 14px;
 }
-label {
-    font-size: 16px;
-}
+label { font-size: 16px; }
 .submitbtn {
   height: 50px;
   width: 100px;
   border-radius: 10px;
   color: white;
-  background-color: #1BBC9B;
+  background-color: #337AB7;
 }
-ul.social {
-  display: inline-flex;
-}
-/* default CSS above */
-/* howitworks CSS below */
+.social { display: inline-flex; }
+/* default CSS END */
+/* howitworks CSS BEGIN */
 .col-xs-6,
 .col-sm-6,
 .col-md-6,
@@ -110,3 +106,8 @@ div>h4 {
 div.col-xs-6.col-sm-6.col-md-6.col-lg-6>p {
   text-align: center;
 }
+img {
+  height: 150px;
+  padding: 10px;
+}
+/* howitworks CSS END */

@@ -15,8 +15,9 @@ h3 {
   text-align: center;
   color: black;
 }
+p { font-weight: 300; }
 nav { background-color: white; }
-div.modal-body {
+.modal-body {
   transform: translate(0,40%);
   text-align: center;
 }
@@ -26,7 +27,7 @@ div.container>h1 {
   text-align: center;
   color: white;
 }
-div.container>h2 {
+h2 {
   text-align: center;
   color: white;
 }
@@ -35,13 +36,13 @@ div.parallax>img {
   width: 1200px;
 }
 img { padding: 10px; }
-img.icon {
+.icon {
   height: 100px;
   width: 100px;
 }
 a.brand-logo,
 .button-collapse { color: black; }
-li>a.nav {
+li>.nav {
   padding-right: 10px;
   padding-left: 10px;
   font-size: 14px;
@@ -49,7 +50,7 @@ li>a.nav {
   color: black;
 }
 a:hover { text-decoration: none; }
-ul.right>li>a {
+.right>li>a {
   text-align: center;
   color: black;
 }
@@ -61,7 +62,11 @@ li>a>img {
   text-align: center;
   height: 350px;
   width: 100%;
+<<<<<<< HEAD
   background-color: rgba(0,0,0,0.2);
+=======
+  background-color: rgba(0,0,0,0.3);
+>>>>>>> e1fdfb45ebe199271e107e84d1550ac717f897fb
 }
 div.parallax { width: 100%; }
 .col-md-4 {
@@ -79,16 +84,12 @@ input[type=password] {
   text-align: center;
   font-size: 14px;
 }
-label {
-  font-size: 16px;
-}
+label { font-size: 16px; }
 .submitbtn {
   height: 50px;
   width: 100px;
   border-radius: 10px;
   color: white;
-  background-color: #1BBC9B;
+  background-color: #337AB7;
 }
-ul.social {
-  display: inline-flex;
-}
+.social { display: inline-flex; }
