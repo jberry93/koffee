@@ -62,11 +62,7 @@ li>a>img {
   text-align: center;
   height: 350px;
   width: 100%;
-<<<<<<< HEAD
-  background-color: rgba(0,0,0,0.2);
-=======
   background-color: rgba(0,0,0,0.3);
->>>>>>> e1fdfb45ebe199271e107e84d1550ac717f897fb
 }
 div.parallax { width: 100%; }
 .col-md-4 {
