@@ -1,25 +1,17 @@
 $(document).ready(function(){
-  $("#quant1").hide();
-  $("#quant2").hide();
   $("#delivery").hide();
   $("#payment").hide();
   $(".submitbtn").hide();
   $(".show2").hide();
   $(".show3").hide();
   $(".show1").click(function(){
-    $("#quant1").show(200);
-    $("#quant2").show(200);
+    $("#delivery").show(200);
     $(".show1").hide();
     $(".show2").show(200);
   });
   $(".show2").click(function(){
-    $("#delivery").show(200);
-    $(".show3").show(200);
-    $(".show2").hide();
-  });
-  $(".show3").click(function(){
     $("#payment").show(200);
     $(".submitbtn").show(200);
-    $(".show3").hide();
+    $(".show2").hide();
   });
 });

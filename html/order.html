@@ -45,80 +45,11 @@
     </div>
     <br><br>
     <form action="orderconfirm.html" method="get">
-      <!-- Drink Selection BEGIN -->
-      <h4>Select your drink</h4>
-      <br>
-      <div id="drink1" class="row">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-md-offset-1">
-          <p>
-            <input type="checkbox" id="tokyo">
-            <label for="tokyo">Tokyo Latte ($3.75)</label>
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <p>
-            <input type="checkbox" id="american">
-            <label for="american">The American ($3)</label>
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <p>
-            <input type="checkbox" id="jonsnow">
-            <label for="jonsnow">Jon Snow ($3.5)</label>
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <p>
-            <input type="checkbox" id="beanbag">
-            <label for="beanbag">Bean Bag ($2)</label>
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <p>
-            <input type="checkbox" id="apple">
-            <label for="apple">Apple of Eden ($2)</label>
-          </p>
-        </div>
-      </div>
-      <div id="drink2" class="row">
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 col-md-offset-1">
-          <p>
-            <input type="checkbox" id="4leaf">
-            <label for="4leaf">4 Leaf Clover ($5.5)</label>
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <p>
-            <input type="checkbox" id="moka">
-            <label for="moka">Mokaccino ($4)</label>
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <p>
-            <input type="checkbox" id="caphe">
-            <label for="caphe">Càphê ($4.5)</label>
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <p>
-            <input type="checkbox" id="chako">
-            <label for="chako">Chako ($3)</label>
-          </p>
-        </div>
-        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <p>
-            <input type="checkbox" id="redfern">
-            <label for="redfern">Red Fern ($3)</label>
-          </p>
-        </div>
-      </div>
-      <button class="show1 btn btn-primary">Submit</button>
-      <!-- Drink Selection END -->
       <!-- Quantity BEGIN -->
       <h4>Quantity</h4>
       <br>
-      <div id="quant1" class="row">
-        <div class="col-md-2 col-sm-2 col-xs-2 col-md-offset-1">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
           <select class="form-control">
             <option>0</option>
             <option>1</option>
@@ -127,9 +58,9 @@
             <option>4</option>
             <option>5</option>
           </select>
-          <label>Tokyo Latte</label>
+          <label>Tokyo Latte ($3.75)</label>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="col-md-6 col-sm-6 col-xs-6">
           <select class="form-control">
             <option>0</option>
             <option>1</option>
@@ -138,20 +69,11 @@
             <option>4</option>
             <option>5</option>
           </select>
-          <label>The American</label>
+          <label>The American ($3)</label>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2">
-          <select class="form-control">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <label>Jon Snow</label>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
           <select class="form-control">
             <option>0</option>
             <option>1</option>
@@ -160,9 +82,9 @@
             <option>4</option>
             <option>5</option>
           </select>
-          <label>Bean Bag</label>
+          <label>Jon Snow ($3.5)</label>
         </div>
-        <div class="col-md-2 col-sm-2 col-xs-2">
+        <div class="col-md-6 col-sm-6 col-xs-6">
           <select class="form-control">
             <option>0</option>
             <option>1</option>
@@ -171,67 +93,82 @@
             <option>4</option>
             <option>5</option>
           </select>
-          <label>Apple of Eden</label>
+          <label>Bean Bag ($2)</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Apple of Eden ($2)</label>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>4 Leaf Clover ($5.5)</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Mokaccino ($4)</label>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Càphê ($4.5)</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Chako ($3)</label>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <select class="form-control">
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <label>Red Fern ($3)</label>
         </div>
       </div>
-      <div id="quant2" class="row">
-        <div class="col-md-2 col-sm-2 col-xs-2 col-md-offset-1">
-          <select class="form-control">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <label>4 Leaf Clover</label>
-        </div>
-        <div class="col-md-2 col-sm-2 col-xs-2">
-          <select class="form-control">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <label>Mokaccino</label>
-        </div>
-        <div class="col-md-2 col-sm-2 col-xs-2">
-          <select class="form-control">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <label>Càphê</label>
-        </div>
-        <div class="col-md-2 col-sm-2 col-xs-2">
-          <select class="form-control">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <label>Chako</label>
-        </div>
-        <div class="col-md-2 col-sm-2 col-xs-2">
-          <select class="form-control">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-          <label>Red Fern</label>
-        </div>
-      </div>
-      <button class="show2 btn btn-primary">Submit</button>
+      <button class="show1 btn btn-primary">Submit</button>
       <!-- Quantity END -->
       <!-- Delivery Address BEGIN -->
       <h4>Delivery Address</h4>
@@ -243,18 +180,8 @@
             <label>First Name</label>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="number" class="validate" placeholder="92602" required>
-            <label>Postal Code</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-6">
             <input type="text" class="validate" placeholder="Cat" required>
             <label>Last Name</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" class="validate" placeholder="CA" required>
-            <label>State, Province, or Region</label>
           </div>
         </div>
         <div class="row">
@@ -263,22 +190,12 @@
             <label>Address</label>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" class="validate" placeholder="USA" required>
-            <label>Country</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" class="validate" placeholder="Irvine" required>
-            <label>City</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
             <input type="number" class="validate" placeholder="9493333333" required>
             <label>Phone Number</label>
           </div>
         </div>
       </div>
-      <button class="show3 btn btn-primary">Submit</button>
+      <button class="show2 btn btn-primary">Submit</button>
       <!-- Delivery Address END -->
       <!-- Payment Info BEGIN -->
       <h4>Payment Info</h4>
@@ -286,11 +203,17 @@
       <div id="payment" class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="number" class="validate" placeholder="XXXXXXXXXXXXXXXX" required>
+            <input type="number" class="validate" required>
             <label>Credit Card Number</label>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <div class="col-md-3 col-sm-3 col-xs-3">
+            <input type="number" class="validate" required>
+            <label>Security Card Number</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-6 col-sm-6 col-xs-6">
               <select class="form-control">
                 <option>01</option>
                 <option>02</option>
@@ -306,7 +229,7 @@
                 <option>12</option>
               </select>
             </div>
-            <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="col-md-6 col-sm-6 col-xs-6">
               <select class="form-control">
                 <option>2015</option>
                 <option>2016</option>
@@ -317,16 +240,6 @@
               </select>
             </div>
             <label>Expiration Date</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="text" class="validate" placeholder="Grumpy Cat" required>
-            <label>Cardholder's Name</label>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-6">
-            <input type="number" class="validate" placeholder="XXX" required>
-            <label>Security Card Number</label>
           </div>
         </div>
       </div>

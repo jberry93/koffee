@@ -96,6 +96,8 @@ input[type=number] {
   font-size: 14px;
 }
 label {
+  padding-top: 20px;
+  display: block;
   font-size: 16px;
 }
 .submitbtn {
@@ -115,10 +117,10 @@ label,
   color: black;
   font-size: 12px;
 }
-.col-lg-2,
-.col-md-2,
-.col-sm-2,
-.col-xs-2 {
+.col-lg-6,
+.col-md-6,
+.col-sm-6,
+.col-xs-6 {
   text-align: center;
 }
 h4 {
@@ -127,38 +129,14 @@ h4 {
 form {
   text-align: center;
 }
-@media (max-width: 991px) {
-  .row {
-    margin-left: 100px;
-  }
+select.form-control {
+  width: 150px;
+  display: inline;
 }
-@media (max-width: 853px) {
-  .row {
-    margin-left: 110px;
-  }
+@media (max-width: 375px) {
   select.form-control {
-    width: 80px;
-  }
-}
-@media (max-width: 640px) {
-  .row {
-    margin-left: 60px;
-  }
-  select.form-control {
-    width: 50px;
-  }
-}
-@media (max-width: 426px) {
-  .row {
-    margin-left: 30px;
-    width: 100%;
-    overflow: auto;
-  }
-  [type="checkbox"]+label {
-    padding-left: 25px;
-  }
-  select.form-control {
-    width: 40px;
+    width: 100px;
+    text-align: center;
   }
 }
 /* order CSS END */
