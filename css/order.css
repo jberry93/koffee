@@ -112,8 +112,7 @@ ul.social {
 }
 /* default CSS END */
 /* order CSS BEGIN */
-label,
-.col-md-2>p>label {
+label {
   color: black;
   font-size: 12px;
 }
