@@ -7,39 +7,43 @@ function mapInit () {
     scrollwheel: false
   });
   // Markers BEGIN
-  var tokyoLatte = new google.maps.Marker({
+  var markerA = new google.maps.Marker({
     position: {lat: 33.684317,lng: -117.885642},
     map: map,
-    label: "Tokyo Latte Truck"
+    label: "A"
   });
-  var jonSnow = new google.maps.Marker({
+  var markerB = new google.maps.Marker({
     position: {lat: 33.674104,lng: -117.770783},
     map: map,
-    label: "Jon Snow Truck"
+    label: "B"
   });
-  var theAmerican = new google.maps.Marker({
+  var markerC = new google.maps.Marker({
     position: {lat: 33.649201,lng: -117.839658},
     map: map,
-    label: "The American Truck"
+    label: "C"
   });
-  var mokaccino = new google.maps.Marker({
+  var markerD = new google.maps.Marker({
     position: {lat: 33.683982,lng: -117.836618},
     map: map,
-    label: "Mokaccino Truck"
+    label: "D"
   });
   // Markers END
   // Add layer for traffic detection:
   var allTheTraffic = new google.maps.TrafficLayer();
   allTheTraffic.setMap(map);
-  // Geolocation BEGIN
+  // HTML5 Geolocation API usage BEGIN
   var infoWindow = new google.maps.InfoWindow({ map: map });
-  // geolocation via HTML5:
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
       var myPosition = {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
+      var myMarker = new google.maps.Marker({
+        position: myPosition,
+        map: map,
+        label: "U"
+      });
       infoWindow.setPosition(myPosition);
       infoWindow.setContent("You are here!");
       map.setCenter(myPosition);
@@ -55,4 +59,4 @@ function handleLocationError (browserHasGeolocation, infoWindow, myPosition) {
   infoWindow.setPosition(myPosition);
   infoWindow.setContent(browserHasGeolocation ? "Error: Geolocation service failed." : "Error: Your browser does not support geolocation");
 }
-// Geolocation END
+// HTML5 Geolocation API usage END
