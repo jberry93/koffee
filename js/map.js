@@ -5,9 +5,7 @@ function mapInit () {
     draggable: false;
     keyboardShortcuts: false;
     rotateControl: false;
-    scaleControl: false;
     scrollwheel: false;
-    streetViewControl: false;
     zoomControl: false;
   });
 }
