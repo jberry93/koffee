@@ -55,6 +55,10 @@ function mapInit () {
     // no geolocation support:
     handleLocationError(false,infoWindow,map.getCenter());
   }
+  function handleLocationError (browserHasGeolocation, infoWindow, myPosition) {
+    infoWindow.setPosition(myPosition);
+    infoWindow.setContent(browserHasGeolocation ? "Error: Geolocation service failed." : "Error: Your browser does not support geolocation");
+  }
   // HTML5 Geolocation API usage END
 
   // Bring in Google Maps Objects BEGIN
@@ -119,7 +123,7 @@ function mapInit () {
 //     handleLocationError(false,infoWindow,map.getCenter());
 //   }
 // }
-function handleLocationError (browserHasGeolocation, infoWindow, myPosition) {
-  infoWindow.setPosition(myPosition);
-  infoWindow.setContent(browserHasGeolocation ? "Error: Geolocation service failed." : "Error: Your browser does not support geolocation");
-};
+// function handleLocationError (browserHasGeolocation, infoWindow, myPosition) {
+//   infoWindow.setPosition(myPosition);
+//   infoWindow.setContent(browserHasGeolocation ? "Error: Geolocation service failed." : "Error: Your browser does not support geolocation");
+// }
