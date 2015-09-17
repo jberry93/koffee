@@ -122,4 +122,4 @@ function mapInit () {
 function handleLocationError (browserHasGeolocation, infoWindow, myPosition) {
   infoWindow.setPosition(myPosition);
   infoWindow.setContent(browserHasGeolocation ? "Error: Geolocation service failed." : "Error: Your browser does not support geolocation");
-}
+};
