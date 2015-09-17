@@ -97,6 +97,7 @@ function mapInit () {
       }
     }
   });
+}
   // Calculate Distances END
 
 //   // HTML5 Geolocation API usage BEGIN
