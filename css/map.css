@@ -6,4 +6,10 @@ body {
 }
 #koffeeMap {
   height: 100%;
+  width: 50%;
+}
+#koffeeDistances {
+  float: right;
+  width: 47%%;
+  padding-left: 3%;
 }
