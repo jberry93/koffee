@@ -63,6 +63,7 @@ function mapInit () {
   // HTML5 Geolocation API usage END
 
   // Bring in Google Maps Objects BEGIN
+  var markersArray = []; //**Google**
   var latLngLimit = new google.maps.LatLngBounds;                 // Set boundary/limits of latitude and longitude
   var allTheTraffic = new google.maps.TrafficLayer();             // Add layer for traffic detection
   allTheTraffic.setMap(map);                                      // Call method setMap on a layer object which takes in an argument of the map you wish to add the layer to
@@ -87,13 +88,30 @@ function mapInit () {
       var listOfDestinations = distanceResponseObject.destinationAddresses; // destinationAddresses is a property of distanceResponseObject which contains an array of strings
       var koffeeDistances = document.getElementById("koffeeDistances");
       koffeeDistances.innerHTML = " ";
-      //deleteMarkers(markersArray);
+      deleteMarkers(markersArray); //**Google**
+
+      var showGeocodedAddressOnMap = function() {                        //**Google**
+        return function(results,status) {                                //**Google**
+           if (status === google.maps.GeocoderStatus.OK) {               //**Google**
+             map.fitBounds(bounds.extend(results[0].geometry.location)); //**Google**
+             markersArray.push(new google.maps.Marker({                  //**Google**
+               map: map,                                                 //**Google**
+               position: results[0].geometry.location,                   //**Google**
+             }));                                                        //**Google**
+           } else {                                                      //**Google**
+             alert("Geocode was not successful due to: " + status);      //**Google**
+           }                                                             //**Google**
+        }                                                                //**Google**
+      }                                                                  //**Google**
+
       // loop through the list of origins:
       for (var origin = 0; origin < listOfOrigins.length; origin++) {
         var originResults = distanceResponseObject.rows[origin].elements;
+        geocoder.geocode({"address": listOfOrigins[origin]}, showGeocodedAddressOnMap(false)); //**Google**
         // loop through the list of destinations:
         for (var destination = 0; destination < originResults.length; destination++) {
-          koffeeDistances.innerHTML += originResults[destination].distance.text + " in " + originResults[destination].duraton.text + "<br>"
+          geocoder.geocode({"address": listOfDestinations[destination]}, showGeocodedAddressOnMap(true)); //**Google**
+          koffeeDistances.innerHTML += listOfOrigins[origin] + " to " + listOfDestinations[destination] + ": " + originResults[destination].distance.text + " in " + originResults[destination].duration.text + "<br>"
         }
       }
     }
