@@ -8,8 +8,13 @@ body {
   height: 100%;
   width: 50%;
 }
-#koffeeDistances {
+/*#koffeeDistances {
   float: right;
   width: 47%;
   padding-left: 3%;
+}*/
+#right-panel {
+  float: right;
+  width: 48%;
+  padding-left: 2%;
 }

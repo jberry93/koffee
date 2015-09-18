@@ -38,9 +38,24 @@
     </nav>
 
       <!-- Google map goes here -->
-      <div class="col-md-6" id="koffeeMap"></div>
+      <!-- <div class="col-md-6" id="koffeeMap"></div>
       <br><br><br><br>
-      <div class="col-md-6" id="koffeeDistances"></div>
+      <div class="col-md-6" id="koffeeDistances"></div> -->
+      <div id="right-panel">
+        <div id="inputs">
+          <pre>
+            var origin1 = {lat: 55.930, lng: -3.118};
+            var origin2 = 'Greenwich, England';
+            var destinationA = 'Stockholm, Sweden';
+            var destinationB = {lat: 50.087, lng: 14.421};
+          </pre>
+        </div>
+        <div>
+          <strong>Results</strong>
+        </div>
+        <div id="koffeeDistances"></div>
+      </div>
+      <div id="koffeeMap"></div>
 
     <footer>
       <div class="container">
@@ -82,7 +97,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="../js/koffee2.js"></script>
-    <script src="../js/map.js"></script>
+    <script src="../js/google.js"></script>
     <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuoViSdkfKO2P8zw1nEDz50kc5Ik_-us8&callback=mapInit">
     </script>
