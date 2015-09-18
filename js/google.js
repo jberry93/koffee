@@ -11,7 +11,7 @@ function initMap() {
       'chst=d_map_pin_letter&chld=D|FF0000|000000';
   var originIcon = 'https://chart.googleapis.com/chart?' +
       'chst=d_map_pin_letter&chld=O|FFFF00|000000';
-  var map = new google.maps.Map(document.getElementById('koffeeMap'), {
+  var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 55.53, lng: 9.4},
     zoom: 10
   });
@@ -31,7 +31,7 @@ function initMap() {
     } else {
       var originList = response.originAddresses;
       var destinationList = response.destinationAddresses;
-      var outputDiv = document.getElementById('koffeeDistances');
+      var outputDiv = document.getElementById('output');
       outputDiv.innerHTML = '';
       deleteMarkers(markersArray);
 
