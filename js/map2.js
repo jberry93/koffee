@@ -34,6 +34,13 @@ function mapInit() {
   var positionD = {lat: 33.683982,lng: -117.836618};
   //marker END
   alert("Markers have been added!");
+  var requestObject = {
+    origins: [{lat:33.668131,lng:-117.863560}, {lat:33.698708,lng:-117.837938}],
+    destinations: [positionA,positionB,positionC,positionD],
+    travelMode: google.maps.TravelMode.DRIVING,
+    avoidTools: true,
+    avoidFerries: true
+  }
   var matrixService = new google.maps.DistanceMatrixService().getDistanceMatrix(requestObject, function(response, status) {
     alert("Response to request!");
     if (status === google.maps.DistanceMatrixStatus.OK) {
