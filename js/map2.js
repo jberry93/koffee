@@ -41,7 +41,7 @@ function mapInit() {
     avoidTools: true,
     avoidFerries: true
   }
-  var matrixService = new google.maps.DistanceMatrixService().getDistanceMatrix(
+  new google.maps.DistanceMatrixService().getDistanceMatrix(
     {
       origins: [{lat:33.668131,lng:-117.863560}, {lat:33.698708,lng:-117.837938}],
       destinations: [positionA,positionB,positionC,positionD],
