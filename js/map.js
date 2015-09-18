@@ -46,7 +46,7 @@ function mapInit () {
         label: "U"
       });
       infoWindow.setPosition(myPosition);
-      // infoWindow.setContent("You are here!");
+      infoWindow.setContent("You are here!");
       map.setCenter(myPosition);
     },function () {
       handleLocationError(true,infoWindow,map.getCenter());
@@ -62,42 +62,42 @@ function mapInit () {
   // HTML5 Geolocation API usage END
 
   // Bring in Google Maps Objects BEGIN
-  var latLngLimit = new google.maps.LatLngBounds;                 // Set boundary/limits of latitude and longitude
-  var allTheTraffic = new google.maps.TrafficLayer();             // Add layer for traffic detection
-  allTheTraffic.setMap(map);                                      // Call method setMap on a layer object which takes in an argument of the map you wish to add the layer to
-  var geocodeConverter = new google.maps.Geocoder;                // Add a converter for geocode (lat and lng) to address
-  var distanceCalculator = new google.maps.DistanceMatrixService; // Add a calculator to calculate the distance between origin(s) and destination(s)
+  // var latLngLimit = new google.maps.LatLngBounds;                 // Set boundary/limits of latitude and longitude
+  // var allTheTraffic = new google.maps.TrafficLayer();             // Add layer for traffic detection
+  // allTheTraffic.setMap(map);                                      // Call method setMap on a layer object which takes in an argument of the map you wish to add the layer to
+  // var geocodeConverter = new google.maps.Geocoder;                // Add a converter for geocode (lat and lng) to address
+  // var distanceCalculator = new google.maps.DistanceMatrixService; // Add a calculator to calculate the distance between origin(s) and destination(s)
   // Bring in Google Maps Objects END
 
   // Calculate Distances BEGIN
-  distanceCalculator.getDistanceMatrix({                                                    // Call method getDistanceMatrix on the calculator object which takes in 2 arguments: an object for the request and a callback function. The callback takes in 2 arguments: a response to the request (an object) and the status upon completion of said request
-    avoidFerries: true,                                                                     // avoidFerries is a property of a request object (unnamed) and is assigned to a boolean value indicating if the distanceCalculator should avoid ferries where possible
-    avoidTolls: true,                                                                       // avoidTolls is a property of a request object (unnamed) and is assigned to a boolean value indicating if the distanceCalculator should avoid tolls where possible
-    destinations: [markerA.position, markerB.position, markerC.position, markerD.position], // destinations is a property of request object (unnamed) and is assigned to an array containing the lat and lng values of the 4 markers which indicates exactly where the destinations are located
-    origin: myPosition,                                                              // origin is a property of a request object (unnamed) and is assigned to an object containing the numeric values of keys lat and lng
-    region: "US",                                                                           // region is a property of a request object (unnamed) and is assigned to a string value indicating the region code used for said request
-    travelMode: google.maps.TravelMode.DRIVING,                                             // travelMode is a property of a request object (unnamed) and is assigned to a constant indicating the mode of transporation. In this case, we are DRIVING
-    unitSystem: google.maps.UnitSystem.IMPERIAL                                             // unitSystem is a property of a request object (unnamed) and is assigned to a constant indicating the units of measure. In this case, we are using the IMPERIAL system (miles)
-  },function (distanceResponseObject,distanceResponseStatus) {                              // The anonymous callback function taking in 2 arguments: a response to the request (an object) and the status upon completion of said request
-    if (distanceResponseStatus !== google.maps.DistanceMatrixStatus.OK) {
-      alert("Error was: " + distanceResponseStatus);
-    } else { // if the distanceResponseStatus is OK:
-      var listOfOrigins = distanceResponseObject.originAddresses; // originAddresses is a property of distanceResponseObject which contains an array of strings
-      var listOfDestinations = distanceResponseObject.destinationAddresses; // destinationAddresses is a property of distanceResponseObject which contains an array of strings
-      var koffeeDistances = document.getElementById("koffeeDistances");
-      koffeeDistances.innerHTML = " ";
-      //deleteMarkers(markersArray);
-      // loop through the list of origins:
-      for (var origin = 0; origin < listOfOrigins.length; origin++) {
-        var originResults = distanceResponseObject.rows[origin].elements;
-        // loop through the list of destinations:
-        for (var destination = 0; destination < originResults.length; destination++) {
-          koffeeDistances.innerHTML = originResults[destination].distance.text + " in " + originResults[destination].duraton.text + "<br>"
-        }
-      }
-    }
-  });
-}
+//   distanceCalculator.getDistanceMatrix({                                                    // Call method getDistanceMatrix on the calculator object which takes in 2 arguments: an object for the request and a callback function. The callback takes in 2 arguments: a response to the request (an object) and the status upon completion of said request
+//     avoidFerries: true,                                                                     // avoidFerries is a property of a request object (unnamed) and is assigned to a boolean value indicating if the distanceCalculator should avoid ferries where possible
+//     avoidTolls: true,                                                                       // avoidTolls is a property of a request object (unnamed) and is assigned to a boolean value indicating if the distanceCalculator should avoid tolls where possible
+//     destinations: [markerA.position, markerB.position, markerC.position, markerD.position], // destinations is a property of request object (unnamed) and is assigned to an array containing the lat and lng values of the 4 markers which indicates exactly where the destinations are located
+//     origin: myPosition,                                                              // origin is a property of a request object (unnamed) and is assigned to an object containing the numeric values of keys lat and lng
+//     region: "US",                                                                           // region is a property of a request object (unnamed) and is assigned to a string value indicating the region code used for said request
+//     travelMode: google.maps.TravelMode.DRIVING,                                             // travelMode is a property of a request object (unnamed) and is assigned to a constant indicating the mode of transporation. In this case, we are DRIVING
+//     unitSystem: google.maps.UnitSystem.IMPERIAL                                             // unitSystem is a property of a request object (unnamed) and is assigned to a constant indicating the units of measure. In this case, we are using the IMPERIAL system (miles)
+//   },function (distanceResponseObject,distanceResponseStatus) {                              // The anonymous callback function taking in 2 arguments: a response to the request (an object) and the status upon completion of said request
+//     if (distanceResponseStatus !== google.maps.DistanceMatrixStatus.OK) {
+//       alert("Error was: " + distanceResponseStatus);
+//     } else { // if the distanceResponseStatus is OK:
+//       var listOfOrigins = distanceResponseObject.originAddresses; // originAddresses is a property of distanceResponseObject which contains an array of strings
+//       var listOfDestinations = distanceResponseObject.destinationAddresses; // destinationAddresses is a property of distanceResponseObject which contains an array of strings
+//       var koffeeDistances = document.getElementById("koffeeDistances");
+//       koffeeDistances.innerHTML = " ";
+//       //deleteMarkers(markersArray);
+//       // loop through the list of origins:
+//       for (var origin = 0; origin < listOfOrigins.length; origin++) {
+//         var originResults = distanceResponseObject.rows[origin].elements;
+//         // loop through the list of destinations:
+//         for (var destination = 0; destination < originResults.length; destination++) {
+//           koffeeDistances.innerHTML = originResults[destination].distance.text + " in " + originResults[destination].duraton.text + "<br>"
+//         }
+//       }
+//     }
+//   });
+// }
   // Calculate Distances END
 
 //   // HTML5 Geolocation API usage BEGIN
