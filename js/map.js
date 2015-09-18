@@ -46,7 +46,7 @@ function mapInit () {
         label: "U"
       });
       infoWindow.setPosition(myPosition);
-      infoWindow.setContent("You are here!");
+      // infoWindow.setContent("You are here!");
       map.setCenter(myPosition);
     },function () {
       handleLocationError(true,infoWindow,map.getCenter());
