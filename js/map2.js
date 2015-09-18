@@ -1,7 +1,7 @@
-function mapInit () {
+function mapInit() {
   alert("Map has been initialized!");
-  var map = new google.maps.Map(document.getElementById("koffeeMap"),{
-    center: { lat: 33.6937232, lng: -117.8055461 },                    // center is a property of map which is assigned to an object with two keys: lat and lng and assigns them numeric values. This will initialize a focal point for the map
+  var map = new google.maps.Map(document.getElementById("koffeeMap"), {
+    center: {lat: 33.6937232, lng: -117.8055461},                    // center is a property of map which is assigned to an object with two keys: lat and lng and assigns them numeric values. This will initialize a focal point for the map
     zoom: 13,                                                          // zoom is a property of map which is assigned to a numeric value indicating the zoom level (Higher #s are close, lower #s are far)
     keyboardShortcuts: false,                                          // keyboardShortcuts is a property of map which is assigned to a boolean value indicating if the user can use keyboard shortcuts
     rotateControl: false,                                              // rotateControl is a property of map which is assigned to a boolean value indicating if the user has rotation control
@@ -35,19 +35,19 @@ function mapInit () {
   //marker END
   alert("Markers have been added!");
   var matrixService = new google.maps.DistanceMatrixService();
-  var requestObject = matrixService.getDistanceMatrix(
-    {
-      origins: [{lat:33.668131,lng:-117.863560},{lat:33.698708,lng:-117.837938}],
-      destinations: [positionA,positionB,positionC,positionD],
-      travelMode: google.maps.TravelMode.DRIVING,
-      avoidTools: true,
-      avoidFerries: true
-    }, callback
-  );
+  var requestObject = {
+    origins: [{lat:33.668131,lng:-117.863560}, {lat:33.698708,lng:-117.837938}],
+    destinations: [positionA,positionB,positionC,positionD],
+    travelMode: google.maps.TravelMode.DRIVING,
+    avoidTools: true,
+    avoidFerries: true
+  }
+  matrixService.getDistanceMatrix(requestObject, callback);
   alert("Request sent!");
   document.write(requestObject);
-  function callback (response,status) {
+  function callback(response, status) {
     //Parse results
+    alert("Callback has been initiated");
     if (status === google.maps.DistanceMatrixStatus.OK) {
       alert("Request was a success!");
       // var origins = response.originAddresses;
@@ -66,6 +66,8 @@ function mapInit () {
       alert("Request has been denied");
     } else if (status === google.maps.DistanceMatrixStatus.UNKNOWN_ERROR) {
       alert("Request was not processed due to server error");
+    } else {
+      alert("Something strange happened");
     }
   }
 }
