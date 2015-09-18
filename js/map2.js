@@ -58,8 +58,8 @@ function mapInit () {
       //     var duration = element.duration.text;
       //     var from = origins[i];
       //     var to = destinations[j];
-        }
-      }
+      //   }
+      // }
     } else if (status === google.maps.DistanceMatrixStatus.REQUEST_DENIED) {
       alert("Request has been denied");
     } else if (status === google.maps.DistanceMatrixStatus.UNKNOWN_ERROR) {
