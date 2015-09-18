@@ -6,7 +6,7 @@ body {
 }
 #koffeeMap {
   height: 100%;
-  width: 50%;
+  width: 100%;
 }
 .row {
   width: 100%;
@@ -14,8 +14,7 @@ body {
 }
 #koffeeDistances {
   float: right;
-  width: 47%;
-  padding-left: 3%;
+  width: 100%;
 }
 /*#right-panel {
   float: right;
