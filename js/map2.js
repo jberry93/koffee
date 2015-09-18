@@ -44,17 +44,6 @@ function mapInit() {
   }
   matrixService.getDistanceMatrix(requestObject, function(response, status) {
     alert("Response to request!");
-    alert(response);
-    alert(status);
-  });
-  alert("Request sent!");
-  // alert(google.maps.DistanceMatrixRequest);
-  alert(google.maps.DistanceMatrixResponse);
-  // alert(google.maps.DistanceMatrixResponseRow);
-  // alert(google.maps.DistanceMatrixStatus);
-  function callback(response, status) {
-    //Parse results
-    alert("Callback has been initiated");
     if (status === google.maps.DistanceMatrixStatus.OK) {
       alert("Request was a success!");
       // var origins = response.originAddresses;
@@ -76,5 +65,10 @@ function mapInit() {
     } else {
       alert("Something strange happened");
     }
-  }
+  });
+  alert("Request sent!");
+  // alert(google.maps.DistanceMatrixRequest);
+  // alert(google.maps.DistanceMatrixResponse);
+  // alert(google.maps.DistanceMatrixResponseRow);
+  // alert(google.maps.DistanceMatrixStatus);
 }
