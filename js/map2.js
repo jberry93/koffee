@@ -58,10 +58,6 @@ function mapInit() {
       //     var to = destinations[j];
       //   }
       // }
-    } else if (status === google.maps.DistanceMatrixStatus.REQUEST_DENIED) {
-      alert("Request has been denied");
-    } else if (status === google.maps.DistanceMatrixStatus.UNKNOWN_ERROR) {
-      alert("Request was not processed due to server error");
     } else {
       alert("Something strange happened");
     }
