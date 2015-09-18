@@ -1,4 +1,5 @@
 function mapInit () {
+  alert("Map has been initialized!");
   var map = new google.maps.Map(document.getElementById("koffeeMap"),{
     center: { lat: 33.6937232, lng: -117.8055461 },                    // center is a property of map which is assigned to an object with two keys: lat and lng and assigns them numeric values. This will initialize a focal point for the map
     zoom: 13,                                                          // zoom is a property of map which is assigned to a numeric value indicating the zoom level (Higher #s are close, lower #s are far)
@@ -44,10 +45,8 @@ function mapInit () {
   );
   function callback (response,status) {
     //Parse results
-    console.log(status);
-    document.write(response);
-    document.write(status);
     if (status === google.maps.DistanceMatrixStatus.OK) {
+      alert("Request was a success!");
       var origins = response.originAddresses;
       var destinations = response.destinationAddresses;
       for (var i = 0; i < origins.length; i++) {
@@ -60,6 +59,10 @@ function mapInit () {
           var to = destinations[j];
         }
       }
+    } else if (status === google.maps.DistanceMatrixStatus.REQUEST_DENIED) {
+      alert("Request has been denied");
+    } else if (status === google.maps.DistanceMatrixStatus.UNKNOWN_ERROR) {
+      alert("Request was not processed due to server error");
     }
   }
 }
