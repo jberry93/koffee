@@ -44,7 +44,9 @@ function mapInit() {
   }
   matrixService.getDistanceMatrix(requestObject, callback);
   alert("Request sent!");
-  document.write(requestObject);
+  alert(requestObject);
+  alert(DistanceMatrixResponse);
+  alert(DistanceMatrixStatus);
   function callback(response, status) {
     //Parse results
     alert("Callback has been initiated");
