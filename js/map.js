@@ -1,9 +1,3 @@
-navigator.geolocation.getCurrentPosition(function (position) {
-  var myPosition = {
-    lat: position.coords.latitude,
-    lng: position.coords.longitude
-  };
-});
 function mapInit () {
   // initialize Google Maps BEGIN
   var map = new google.maps.Map(document.getElementById("koffeeMap"),{ // Call method Map which takes in 2 arguments: reference to element to place map in and and object containing the map options
@@ -41,11 +35,11 @@ function mapInit () {
   // HTML5 Geolocation API usage BEGIN
   var infoWindow = new google.maps.InfoWindow({ map: map });
   if (navigator.geolocation) {
-    // navigator.geolocation.getCurrentPosition(function (position) {
-    //   var myPosition = {
-    //     lat: position.coords.latitude,
-    //     lng: position.coords.longitude
-    //   };
+    navigator.geolocation.getCurrentPosition(function (position) {
+      var myPosition = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude
+      };
       var myMarker = new google.maps.Marker({
         position: myPosition,
         map: map,
