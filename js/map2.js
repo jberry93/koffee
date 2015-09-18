@@ -37,7 +37,7 @@ function mapInit () {
     {
       origin: {lat: 33.668131,lng: -117.863560},
       destinations: [positionA,positionB,positionC,positionD],
-      travelMode: google.maps.travelMode.DRIVING,
+      travelMode: google.maps.TravelMode.DRIVING,
       avoidTools: true,
       avoidFerries: true
     }, callback
