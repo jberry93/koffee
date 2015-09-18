@@ -35,15 +35,17 @@ function mapInit () {
   //marker END
   alert("Markers have been added!");
   var matrixService = new google.maps.DistanceMatrixService();
-  matrixService.getDistanceMatrix(
+  var requestObject = matrixService.getDistanceMatrix(
     {
-      origin: {lat: 33.668131,lng: -117.863560},
+      origins: [{lat:33.668131,lng:-117.863560},{lat:33.698708,lng:-117.837938}],
       destinations: [positionA,positionB,positionC,positionD],
       travelMode: google.maps.TravelMode.DRIVING,
       avoidTools: true,
       avoidFerries: true
     }, callback
   );
+  alert("Request sent!");
+  document.write(requestObject);
   function callback (response,status) {
     //Parse results
     if (status === google.maps.DistanceMatrixStatus.OK) {
