@@ -42,11 +42,16 @@ function mapInit() {
     avoidTools: true,
     avoidFerries: true
   }
-  matrixService.getDistanceMatrix(requestObject, callback);
+  matrixService.getDistanceMatrix(requestObject, function(response, status) {
+    alert("Response to request!");
+    alert(response);
+    alert(status);
+  });
   alert("Request sent!");
-  alert(requestObject);
-  alert(DistanceMatrixResponse);
-  alert(DistanceMatrixStatus);
+  // alert(google.maps.DistanceMatrixRequest);
+  alert(google.maps.DistanceMatrixResponse);
+  // alert(google.maps.DistanceMatrixResponseRow);
+  // alert(google.maps.DistanceMatrixStatus);
   function callback(response, status) {
     //Parse results
     alert("Callback has been initiated");
