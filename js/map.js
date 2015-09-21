@@ -1,14 +1,15 @@
 function mapInit () {
   // initialize Google Maps BEGIN
-  var map = new google.maps.Map(document.getElementById("koffeeMap"),{ // Call method Map which takes in 2 arguments: reference to element to place map in and and object containing the map options
-    center: { lat: 33.6937232, lng: -117.8055461 },                    // center is a property of map which is assigned to an object with two keys: lat and lng and assigns them numeric values. This will initialize a focal point for the map
+  var mapContainer = document.getElementById("koffeeMap");
+  var mapOptionsObject = {
+    center: {lat: 33.6937232, lng: -117.8055461},                      // center is a property of map which is assigned to an object with two keys: lat and lng and assigns them numeric values. This will initialize a focal point for the map
     zoom: 13,                                                          // zoom is a property of map which is assigned to a numeric value indicating the zoom level (Higher #s are close, lower #s are far)
     keyboardShortcuts: false,                                          // keyboardShortcuts is a property of map which is assigned to a boolean value indicating if the user can use keyboard shortcuts
     rotateControl: false,                                              // rotateControl is a property of map which is assigned to a boolean value indicating if the user has rotation control
     scrollwheel: false                                                 // scrollwheel is a property of map which is assigned to a boolean value indicating if the user can zoom via scrollwheel
-  });
+  }
+  var map = new google.maps.Map(mapContainer, mapOptionsObject);
   // Initialize Google Maps END
-
   // Add 4 Markers BEGIN
   var markerA = new google.maps.Marker({         // Call method Marker which is assigned to an object and key value pairs indicating the information for the new marker and return the marker to new variable markerA
     position: {lat: 33.684317,lng: -117.885642}, // position is a property of markerA which is assigned to an object with 2 keys lat and lng and assigns them numeric values indicating the exact position of marker placement
@@ -31,6 +32,7 @@ function mapInit () {
     label: "D"
   });
   // Add 4 Markers END
+<<<<<<< HEAD
 
   // HTML5 Geolocation API usage BEGIN
   var infoWindow = new google.maps.InfoWindow({ map: map });
@@ -123,4 +125,64 @@ function mapInit () {
 function handleLocationError (browserHasGeolocation, infoWindow, myPosition) {
   infoWindow.setPosition(myPosition);
   infoWindow.setContent(browserHasGeolocation ? "Error: Geolocation service failed." : "Error: Your browser does not support geolocation");
+=======
+  // Marker Positions BEGIN
+  var positionA = {
+    lat: 33.684317,
+    lng: -117.885642
+  }
+  var positionB = {
+    lat: 33.674104,
+    lng: -117.770783
+  }
+  var positionC = {
+    lat: 33.649201,
+    lng: -117.839658
+  }
+  var positionD = {
+    lat: 33.683982,
+    lng: -117.836618
+  }
+  // Marker Positions END
+  // HTML5 Geolocation API usage BEGIN
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showLocation);
+  } else {
+    // no geolocation support:
+    alert("Please enable geolocation");
+  }
+  function showLocation(position) {
+    var myPosition = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude
+    };
+    var myMarkerOptions = {
+      position: myPosition,
+      map: map,
+      label: "U"
+    };
+    var myMarker = new google.maps.Marker(myMarkerOptions);
+    map.setCenter(myPosition);
+    // Distance Calculations BEGIN
+    function radians(degrees) {
+      var convert = (degrees * Math.PI) / 180;
+      return convert;
+    }
+    function haversine(markerPosition) {
+      var latDifference = radians(markerPosition.lat - position.coords.latitude);
+      var lngDifference = radians(markerPosition.lng - position.coords.longitude);
+      var radius = 3961;
+      var a = Math.pow(Math.sin(latDifference / 2), 2) + Math.cos(radians(position.coords.latitude)) * Math.cos(radians(markerPosition.lat)) * Math.pow(Math.sin(lngDifference / 2), 2);
+      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      var d = radius * c;
+      return d;
+    }
+    // Distance Calculations END
+    // Display Results BEGIN
+    var outputDiv = document.getElementById("distances");
+    outputDiv.innerHTML = "<p>Truck A is " + haversine(positionA).toFixed(2) + " miles away!" + "</p>" + "<p>Truck B is " + haversine(positionB).toFixed(2) + " miles away!" + "</p>" + "<p>Truck C is " + haversine(positionC).toFixed(2) + " miles away!" + "</p>" + "<p>Truck D is " + haversine(positionD).toFixed(2) + " miles away!" + "</p>";
+    // Display Results END
+  }
+  // HTML5 Geolocation API usage END
+>>>>>>> gh-pages
 }
