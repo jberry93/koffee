@@ -3,7 +3,7 @@ function mapInit () {
   var mapContainer = document.getElementById("koffeeMap");
   var mapOptionsObject = {
     center: {lat: 33.6937232, lng: -117.8055461},                      // center is a property of map which is assigned to an object with two keys: lat and lng and assigns them numeric values. This will initialize a focal point for the map
-    zoom: 13,                                                          // zoom is a property of map which is assigned to a numeric value indicating the zoom level (Higher #s are close, lower #s are far)
+    zoom: 12,                                                          // zoom is a property of map which is assigned to a numeric value indicating the zoom level (Higher #s are close, lower #s are far)
     keyboardShortcuts: false,                                          // keyboardShortcuts is a property of map which is assigned to a boolean value indicating if the user can use keyboard shortcuts
     rotateControl: false,                                              // rotateControl is a property of map which is assigned to a boolean value indicating if the user has rotation control
     scrollwheel: false                                                 // scrollwheel is a property of map which is assigned to a boolean value indicating if the user can zoom via scrollwheel
@@ -51,7 +51,6 @@ function mapInit () {
   }
   // Marker Positions END
   // HTML5 Geolocation API usage BEGIN
-  var infoWindow = new google.maps.InfoWindow({ map: map });
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showLocation);
   } else {
