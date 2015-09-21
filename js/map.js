@@ -3,7 +3,7 @@ function mapInit () {
   var mapContainer = document.getElementById("koffeeMap");
   var mapOptionsObject = {
     center: {lat: 33.6937232, lng: -117.8055461},                      // center is a property of map which is assigned to an object with two keys: lat and lng and assigns them numeric values. This will initialize a focal point for the map
-    zoom: 12,                                                          // zoom is a property of map which is assigned to a numeric value indicating the zoom level (Higher #s are close, lower #s are far)
+    zoom: 13,                                                          // zoom is a property of map which is assigned to a numeric value indicating the zoom level (Higher #s are close, lower #s are far)
     keyboardShortcuts: false,                                          // keyboardShortcuts is a property of map which is assigned to a boolean value indicating if the user can use keyboard shortcuts
     rotateControl: false,                                              // rotateControl is a property of map which is assigned to a boolean value indicating if the user has rotation control
     scrollwheel: false                                                 // scrollwheel is a property of map which is assigned to a boolean value indicating if the user can zoom via scrollwheel
@@ -86,7 +86,7 @@ function mapInit () {
     // Distance Calculations END
     // Display Results BEGIN
     var outputDiv = document.getElementById("distances");
-    outputDiv.innerHTML = "<p>Marker A is " + haversine(positionA).toFixed(2) + " miles away!" + "</p>" + "<p>Marker B is " + haversine(positionB).toFixed(2) + " miles away!" + "</p>" + "<p>Marker C is " + haversine(positionC).toFixed(2) + " miles away!" + "</p>" + "<p>Marker D is " + haversine(positionD).toFixed(2) + " miles away!" + "</p>";
+    outputDiv.innerHTML = "<p>Truck A is " + haversine(positionA).toFixed(2) + " miles away!" + "</p>" + "<p>Truck B is " + haversine(positionB).toFixed(2) + " miles away!" + "</p>" + "<p>Truck C is " + haversine(positionC).toFixed(2) + " miles away!" + "</p>" + "<p>Truck D is " + haversine(positionD).toFixed(2) + " miles away!" + "</p>";
     // Display Results END
   }
   // HTML5 Geolocation API usage END
