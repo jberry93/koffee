@@ -54,14 +54,14 @@ a:hover { text-decoration: none; }
   text-align: center;
   color: black;
 }
-div.coffeePics {
+#coffeePics {
   text-align: center;
 }
-div.coffeePics > li {
+#coffeePics > li {
   padding: 10px;
   display: inline-block;
 }
-div.coffeePics > li > a > img {
+#coffeePics > li > a > img {
   height: 250px;
   width: 250px;
 }
