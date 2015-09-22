@@ -54,6 +54,9 @@ a:hover { text-decoration: none; }
   text-align: center;
   color: black;
 }
+div.coffeePics {
+  text-align: center;
+}
 div.coffeePics > li {
   padding: 10px;
   display: inline-block;
