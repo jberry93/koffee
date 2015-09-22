@@ -50,7 +50,7 @@
       <br>
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="tokyoDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -61,7 +61,7 @@
           <label>Tokyo Latte ($3.75)</label>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="americanDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -74,7 +74,7 @@
         </div>
         <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="snowDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -85,7 +85,7 @@
           <label>Jon Snow ($3.5)</label>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="bagDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -98,7 +98,7 @@
         </div>
         <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="edenDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -109,7 +109,7 @@
           <label>Apple of Eden ($2)</label>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="cloverDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -122,7 +122,7 @@
         </div>
         <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="mokaccinoDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -133,7 +133,7 @@
           <label>Mokaccino ($4)</label>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="capheDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -146,7 +146,7 @@
         </div>
         <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="chakoDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -157,7 +157,7 @@
           <label>Chako ($3)</label>
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6">
-          <select class="form-control">
+          <select id="fernDrop" class="form-control">
             <option>0</option>
             <option>1</option>
             <option>2</option>
@@ -247,6 +247,54 @@
       <!-- Payment Info END -->
       <input class="submitbtn" type="submit">
     </form>
+    <br>
+    <div id="calculator">
+      <div id="totalCost">
+        <p>Total: </p>
+      </div>
+      <hr>
+      <div id="Fees">
+        <p>Delivery Fee: 5.00</p>
+        <!-- <p>Sales Tax: 1.02</p> -->
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="hide" id="tokyoCost">
+            <p>Tokyo Latte</p>
+          </div>
+          <div class="hide" id="americanCost">
+            <p>The American</p>
+          </div>
+          <div class="hide" id="snowCost">
+            <p>Jon Snow</p>
+          </div>
+          <div class="hide" id="bagCost">
+            <p>Bean Bag</p>
+          </div>
+          <div class="hide" id="edenCost">
+            <p>Apple of Eden</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <div class="hide" id="cloverCost">
+            <p>4 Lead Clover</p>
+          </div>
+          <div class="hide" id="mokaccinoCost">
+            <p>Mokaccino</p>
+          </div>
+          <div class="hide" id="capheCost">
+            <p>Càphê</p>
+          </div>
+          <div class="hide" id="chakoCost">
+            <p>Chako</p>
+          </div>
+          <div class="hide" id="fernCost">
+            <p>Red Fern</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <br><br>
     <footer>
         <div class="container">
@@ -289,6 +337,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="../js/koffee2.js"></script>
     <script src="../js/order.js"></script>
+    <script src="../js/orderCalculator.js"></script>
     <!-- Scripts END -->
   </body>
 </html>
