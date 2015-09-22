@@ -9,6 +9,12 @@ var capheDrinkNumber = document.getElementById("capheDrop");
 var chakoDrinkNumber = document.getElementById("chakoDrop");
 var fernDrinkNumber = document.getElementById("fernDrop");
 function getTokyoDrinks() {
-  console.log(tokyoDrinkNumber.value);
+  var tokyoCostDiv = document.getElementById("tokyoCost");
+  if(tokyoDrinkNumber.value > 0) {
+    tokyoCostDiv.setAttribute("class", "show");
+    tokyoCostDiv.innerHTML = "<p>Tokyo Latte: 3.75 X " + tokyoDrinkNumber.value + "</p>";
+  } else {
+    tokyoCostDiv.setAttribute("class", "hide");
+  }
 }
 tokyoDrinkNumber.addEventListener("blur", getTokyoDrinks, false);
