@@ -13,7 +13,7 @@
 
 var httpRequest = new XMLHttpRequest();
 httpRequest.open("GET", "https://api.instagram.com/v1/tags/latteart/media/recent?client_id=7f82f487f342497485a982e5bf023d46&access_token=1594020.7f82f48.af1cdd81330e4fd9859f55d9ee2478c6", true);
-httpRequest.setRequestHeader("Access-Control-Allow-Origin", "http://jberry93.github.io/koffee/");
+// httpRequest.setRequestHeader("Access-Control-Allow-Origin", "http://jberry93.github.io/koffee/");
 httpRequest.onreadystatechange = function() {
   if(httpRequest.status === 200) {
     console.log("success!");
