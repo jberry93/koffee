@@ -31,7 +31,7 @@ function totalCost() {
   }
   tax = subTotal * salesTax;
   grandTotal = subTotal + tax + deliveryFee;
-  elementReference("total-cost").textContent = "Total: " + "$" + grandTotal;
+  elementReference("total-cost").textContent = "Total: " + "$" + grandTotal.toFixed(2);
   elementReference("sales-tax").textContent = "Sales Tax: " + "$" + tax.toFixed(2);
   elementReference("delivery-fee").textContent = "Delivery Fee: " + "$" + deliveryFee.toFixed(2);
   elementReference("sub-total").textContent = "Subtotal: " + "$" + subTotal.toFixed(2);
