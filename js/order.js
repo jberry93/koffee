@@ -2,16 +2,15 @@ $(document).ready(function(){
   $("#delivery").hide();
   $("#payment").hide();
   $(".submitbtn").hide();
-  $(".show2").hide();
-  $(".show3").hide();
   $(".show1").click(function(){
     $("#delivery").show(200);
     $(".show1").hide();
-    $(".show2").show(200);
-  });
-  $(".show2").click(function(){
-    $("#payment").show(200);
     $(".submitbtn").show(200);
-    $(".show2").hide();
+    $("#payment").show(200);
+    $("#row1").hide();
+    $("#row2").hide();
+    $("#row3").hide();
+    $("#row4").hide();
+    $("#row5").hide();
   });
 });

@@ -37,22 +37,22 @@ function totalCost() {
   elementReference("sub-total").textContent = "Subtotal: " + "$" + subTotal.toFixed(2);
 }
 
-// var divArray = ["tokyoCost", "americanCost", "snowCost", "bagCost", "edenCost", "cloverCost", "mokaccinoCost", "capheCost", "chakoCost", "fernCost"];
-// var paragraphArray = ["tokyoParagraph", "americanParagraph", "snowParagraph", "bagParagraph", "edenParagraph", "cloverParagraph", "mokaccinoParagraph", "capheParagraph", "chakoParagraph", "fernParagraph"];
-// function divControl() {
-//   for(var number = 0; number < 10; number++) {
-//     if(elementReference(idArray[number]).value > 0) {
-//       elementReference(divArray[number]).setAttribute("class", "show");
-//       var paragraphText = document.createTextNode(drinkNameArray[number] + " X " + cart[number].quantity);
-//       divArray[number].appendChild(paragraphText);
-//     } else {
-//       elementReference(divArray[number]).setAttribute("class", "hide");
-//     }
-//   }
-// }
+var divArray = ["tokyoCost", "americanCost", "snowCost", "bagCost", "edenCost", "cloverCost", "mokaccinoCost", "capheCost", "chakoCost", "fernCost"];
+var paragraphArray = ["tokyoParagraph", "americanParagraph", "snowParagraph", "bagParagraph", "edenParagraph", "cloverParagraph", "mokaccinoParagraph", "capheParagraph", "chakoParagraph", "fernParagraph"];
+function divControl() {
+  for(var number = 0; number < 10; number++) {
+    if(elementReference(idArray[number]).value > 0) {
+      elementReference(divArray[number]).setAttribute("class", "show");
+      var paragraphText = document.getElementById(paragraphArray[number]);
+      paragraphText.textContent = drinkNameArray[number] + " " + priceArray[number].toFixed(2) + " X " + cart[number].quantity;
+    } else {
+      elementReference(divArray[number]).setAttribute("class", "hide");
+    }
+  }
+}
 
 elementReference("firstSubmit").addEventListener("click", function() {
   drinkCart();
   totalCost();
-  // divControl();
+  divControl();
 }, false);
