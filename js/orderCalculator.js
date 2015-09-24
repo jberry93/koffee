@@ -9,9 +9,45 @@ function drinkObject(drinkName, qty, price) {
   this.price = price;
 }
 
-var drinkNameArray = ["Tokyo Latte", "The American", "Jon Snow", "Bean Bag", "Apple of Eden", "4 Lead Clover", "Mokaccino", "Càphê", "Chako", "Red Fern"];
-var priceArray = [3.75, 3.00, 3.50, 2.00, 2.00, 5.50, 4.00, 4.50, 3.00, 3.00];
-var idArray = ["tokyoDrop", "americanDrop", "snowDrop", "bagDrop", "edenDrop", "cloverDrop", "mokaccinoDrop", "capheDrop", "chakoDrop", "fernDrop"];
+var drinkNameArray = [
+  "Tokyo Latte",
+  "The American",
+  "Jon Snow",
+  "Bean Bag",
+  "Apple of Eden",
+  "4 Lead Clover",
+  "Mokaccino",
+  "Càphê",
+  "Chako",
+  "Red Fern"
+];
+
+var priceArray = [
+  3.75,
+  3.00,
+  3.50,
+  2.00,
+  2.00,
+  5.50,
+  4.00,
+  4.50,
+  3.00,
+  3.00
+];
+
+var idArray = [
+  "tokyoDrop",
+  "americanDrop",
+  "snowDrop",
+  "bagDrop",
+  "edenDrop",
+  "cloverDrop",
+  "mokaccinoDrop",
+  "capheDrop",
+  "chakoDrop",
+  "fernDrop"
+];
+
 var cart = [];
 function drinkCart() {
   for(var number = 0; number < 10; number++) {
@@ -37,8 +73,32 @@ function totalCost() {
   elementReference("sub-total").textContent = "Subtotal: " + "$" + subTotal.toFixed(2);
 }
 
-var divArray = ["tokyoCost", "americanCost", "snowCost", "bagCost", "edenCost", "cloverCost", "mokaccinoCost", "capheCost", "chakoCost", "fernCost"];
-var paragraphArray = ["tokyoParagraph", "americanParagraph", "snowParagraph", "bagParagraph", "edenParagraph", "cloverParagraph", "mokaccinoParagraph", "capheParagraph", "chakoParagraph", "fernParagraph"];
+var divArray = [
+  "tokyoCost",
+  "americanCost",
+  "snowCost",
+  "bagCost",
+  "edenCost",
+  "cloverCost",
+  "mokaccinoCost",
+  "capheCost",
+  "chakoCost",
+  "fernCost"
+];
+
+var paragraphArray = [
+  "tokyoParagraph",
+  "americanParagraph",
+  "snowParagraph",
+  "bagParagraph",
+  "edenParagraph",
+  "cloverParagraph",
+  "mokaccinoParagraph",
+  "capheParagraph",
+  "chakoParagraph",
+  "fernParagraph"
+];
+
 function divControl() {
   for(var number = 0; number < 10; number++) {
     if(elementReference(idArray[number]).value > 0) {
