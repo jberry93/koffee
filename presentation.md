@@ -42,3 +42,20 @@ who are constantly busy
 I chose this color scheme since I want the audience to focus more on the
 function rather than the form. A clean and modern look was my goal for
 this website
+
+I chose the Roboto font because I wanted the website to look clean and
+modern and also to feel familiar being that Roboto is the font used for
+Android
+
+The layout of my website is focused on the product of delivering coffee.
+The landing page draws attention to the order button which is exactly
+where I want the user to go. Each page serves their primary function
+which is to tell you more about how the service works
+
+My code layout seems pretty straightforward. I made sure to separate my
+HTML, CSS, and Javascript files into their respective directories for easier
+navigation. I prefer it this way since embedding CSS and/or Javascript into
+the HTML file may seem convenient but I would rather be working on just HTML
+in a HTML file and CSS in a CSS file. Separating all these components makes
+working on them easier
+
