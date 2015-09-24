@@ -141,7 +141,7 @@ select.form-control {
   display: block;
 }
 #total-cost {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: red;
   text-align: right;
@@ -150,9 +150,22 @@ select.form-control {
 #delivery-fee,
 #sales-tax,
 #sub-total {
-  font-size: 16px;
+  font-size: 18px;
   text-align: right;
   padding-right: 30%;
+}
+#tokyoCost,
+#americanCost,
+#snowCost,
+#bagCost,
+#edenCost,
+#cloverCost,
+#mokaccinoCost,
+#capheCost,
+#chakoCost,
+#fernCost,
+#drinkList {
+  padding-left: 30%;
 }
 #calculator {
   border: 3px solid black;
