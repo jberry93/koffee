@@ -76,19 +76,6 @@ function mapInit () {
       var latDifference = radians(markerPosition.lat - position.coords.latitude);
       var lngDifference = radians(markerPosition.lng - position.coords.longitude);
       var radius = 3961;
-      var a = Math.pow(Math.sin(latDifference / 2), 2) +
-              Math.cos(radians(position.coords.latitude)) *
-              Math.cos(radians(markerPosition.lat)) *
-              Math.pow(Math.sin(lngDifference / 2), 2);
-      var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-      var d = radius * c;
-      return d;
-    }
-
-    function haversine2(markerPosition) {
-      var latDifference = radians(markerPosition.lat - position.coords.latitude);
-      var lngDifference = radians(markerPosition.lng - position.coords.longitude);
-      var radius = 3961;
       var firstSine = Math.sin(latDifference / 2);
       var secondSine = Math.sin(lngDifference / 2);
       var cosines = Math.cos(radians(markerPosition.lat)) * Math.cos(radians(position.coords.latitude));
@@ -100,16 +87,16 @@ function mapInit () {
 
     var outputDiv = document.getElementById("distances");
     outputDiv.innerHTML = "<p>Truck A is " +
-                          haversine(positionA).toFixed(2) + " " + haversine2(positionA).toFixed(2) +
+                          haversine(positionA).toFixed(2) +
                           " miles away!" + "</p>" +
                           "<p>Truck B is " +
-                          haversine(positionB).toFixed(2) + " " + haversine2(positionB).toFixed(2) +
+                          haversine(positionB).toFixed(2) +
                           " miles away!" + "</p>" +
                           "<p>Truck C is " +
-                          haversine(positionC).toFixed(2) + " " + haversine2(positionC).toFixed(2) +
+                          haversine(positionC).toFixed(2) +
                           " miles away!" + "</p>" +
                           "<p>Truck D is " +
-                          haversine(positionD).toFixed(2) + " " + haversine2(positionD).toFixed(2) +
+                          haversine(positionD).toFixed(2) +
                           " miles away!" + "</p>";
   }
 }
