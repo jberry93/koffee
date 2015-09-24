@@ -70,6 +70,17 @@ a:hover {
   text-align: center;
   color: black;
 }
+#coffeePics {
+  text-align: center;
+}
+#coffeePics > li {
+  padding: 10px;
+  display: inline-block;
+}
+#coffeePics > li > a > img {
+  height: 250px;
+  width: 250px;
+}
 li>a>img {
   height: 50px;
   width: 50px;
@@ -108,6 +119,10 @@ label {
   color: white;
   background-color: #337AB7;
 }
+<<<<<<< HEAD
 .social {
   display: inline-flex;
 }
+=======
+.social { display: inline-flex; }
+>>>>>>> gh-pages
