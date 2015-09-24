@@ -46,7 +46,7 @@
     <br><br>
     <form action="map.html" method="get">
       <!-- Quantity BEGIN -->
-      <h4>Quantity</h4>
+      <h4 id="quantity">Quantity</h4>
       <br>
       <div id="row1" class="row">
         <div class="col-md-6 col-sm-6 col-xs-6">
@@ -171,9 +171,9 @@
       <button id="firstSubmit" class="show1 btn btn-primary">Next</button>
       <!-- Quantity END -->
       <!-- Delivery Address BEGIN -->
-      <h4>Delivery Address</h4>
       <br>
       <div id="delivery" class="container">
+        <h4>Delivery Address</h4>
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
             <input type="text" class="validate" placeholder="Grumpy" required>
@@ -197,9 +197,9 @@
       </div>
       <!-- Delivery Address END -->
       <!-- Payment Info BEGIN -->
-      <h4>Payment Info</h4>
       <br>
       <div id="payment" class="container">
+        <h4>Payment Info</h4>
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
             <input type="number" class="validate" required>
@@ -248,32 +248,35 @@
     </form>
     <br>
     <div id="calculator">
-      <div id="totalCost">
-        <p id="total-cost"></p>
-      </div>
-      <div id="fees">
-        <p id="delivery-fee"></p>
-        <p id="sales-tax"></p>
-        <p id="sub-total"></p>
-      </div>
+      <h3>Order Summary</h3>
       <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-6">
+          <h4>Drink List</h4>
           <div class="hide" id="tokyoCost"><p id="tokyoParagraph"></p></div>
           <div class="hide" id="americanCost"><p id="americanParagraph"></p></div>
           <div class="hide" id="snowCost"><p id="snowParagraph"></p></div>
           <div class="hide" id="bagCost"><p id="bagParagraph"></p></div>
           <div class="hide" id="edenCost"><p id="edenParagraph"></p></div>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-6">
           <div class="hide" id="cloverCost"><p id="cloverParagraph"></p></div>
           <div class="hide" id="mokaccinoCost"><p id="mokaccinoParagraph"></p></div>
           <div class="hide" id="capheCost"><p id="capheParagraph"></p></div>
           <div class="hide" id="chakoCost"><p id="chakoParagraph"></p></div>
           <div class="hide" id="fernCost"><p id="fernParagraph"></p></div>
         </div>
+        <div class="col-md-6 col-sm-6 col-xs-6">
+          <h4>Cost</h4>
+          <div id="totalCost">
+            <p id="total-cost"></p>
+          </div>
+          <div id="fees">
+            <p id="delivery-fee"></p>
+            <p id="sales-tax"></p>
+            <p id="sub-total"></p>
+          </div>
+        </div>
       </div>
     </div>
-    <br><br>
+    <br>
     <footer>
         <div class="container">
           <div class="row">
