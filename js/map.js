@@ -1,18 +1,18 @@
 function mapInit () {
   var mapContainer = document.getElementById("koffeeMap");
   var mapOptionsObject = {
-    center: {lat: 33.6937232, lng: -117.8055461},                      // center is a property of map which is assigned to an object with two keys: lat and lng and assigns them numeric values. This will initialize a focal point for the map
-    zoom: 13,                                                          // zoom is a property of map which is assigned to a numeric value indicating the zoom level (Higher #s are close, lower #s are far)
-    keyboardShortcuts: false,                                          // keyboardShortcuts is a property of map which is assigned to a boolean value indicating if the user can use keyboard shortcuts
-    rotateControl: false,                                              // rotateControl is a property of map which is assigned to a boolean value indicating if the user has rotation control
-    scrollwheel: false                                                 // scrollwheel is a property of map which is assigned to a boolean value indicating if the user can zoom via scrollwheel
+    center: {lat: 33.6937232, lng: -117.8055461},
+    zoom: 13,
+    keyboardShortcuts: false,
+    rotateControl: false,
+    scrollwheel: false
   }
   var map = new google.maps.Map(mapContainer, mapOptionsObject);
 
-  var markerA = new google.maps.Marker({         // Call method Marker which is assigned to an object and key value pairs indicating the information for the new marker and return the marker to new variable markerA
-    position: {lat: 33.684317,lng: -117.885642}, // position is a property of markerA which is assigned to an object with 2 keys lat and lng and assigns them numeric values indicating the exact position of marker placement
-    map: map,                                    // map is a property of markerA which is assigned to object map indicating which map to assign this marker to
-    label: "A"                                   // label is a property of markerA which is assigned to a string value A indicating the appearance of the label to be a letter A
+  var markerA = new google.maps.Marker({
+    position: {lat: 33.684317,lng: -117.885642},
+    map: map,
+    label: "A"
   });
   var markerB = new google.maps.Marker({
     position: {lat: 33.674104,lng: -117.770783},
