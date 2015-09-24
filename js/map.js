@@ -100,16 +100,16 @@ function mapInit () {
 
     var outputDiv = document.getElementById("distances");
     outputDiv.innerHTML = "<p>Truck A is " +
-                          haversine(positionA).toFixed(2) + " " + haversine2(positionA).toFixed(2)
+                          haversine(positionA).toFixed(2) + " " + haversine2(positionA).toFixed(2) +
                           " miles away!" + "</p>" +
                           "<p>Truck B is " +
-                          haversine(positionB).toFixed(2) + " " + haversine2(positionB).toFixed(2)
+                          haversine(positionB).toFixed(2) + " " + haversine2(positionB).toFixed(2) +
                           " miles away!" + "</p>" +
                           "<p>Truck C is " +
-                          haversine(positionC).toFixed(2) + " " + haversine2(positionC).toFixed(2)
+                          haversine(positionC).toFixed(2) + " " + haversine2(positionC).toFixed(2) +
                           " miles away!" + "</p>" +
                           "<p>Truck D is " +
-                          haversine(positionD).toFixed(2) + " " + haversine2(positionD).toFixed(2)
+                          haversine(positionD).toFixed(2) + " " + haversine2(positionD).toFixed(2) +
                           " miles away!" + "</p>";
   }
 }
