@@ -85,19 +85,6 @@ function mapInit () {
       return distance;
     }
 
-    // var outputDiv = document.getElementById("distances");
-    // outputDiv.innerHTML = "<p>Truck A is " +
-    //                       haversine(positionA).toFixed(2) +
-    //                       " miles away!" + "</p>" +
-    //                       "<p>Truck B is " +
-    //                       haversine(positionB).toFixed(2) +
-    //                       " miles away!" + "</p>" +
-    //                       "<p>Truck C is " +
-    //                       haversine(positionC).toFixed(2) +
-    //                       " miles away!" + "</p>" +
-    //                       "<p>Truck D is " +
-    //                       haversine(positionD).toFixed(2) +
-    //                       " miles away!" + "</p>";
     var truckA = document.getElementById("truckA")
     var truckB = document.getElementById("truckB")
     var truckC = document.getElementById("truckC")
