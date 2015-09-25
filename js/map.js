@@ -85,18 +85,26 @@ function mapInit () {
       return distance;
     }
 
-    var outputDiv = document.getElementById("distances");
-    outputDiv.innerHTML = "<p>Truck A is " +
-                          haversine(positionA).toFixed(2) +
-                          " miles away!" + "</p>" +
-                          "<p>Truck B is " +
-                          haversine(positionB).toFixed(2) +
-                          " miles away!" + "</p>" +
-                          "<p>Truck C is " +
-                          haversine(positionC).toFixed(2) +
-                          " miles away!" + "</p>" +
-                          "<p>Truck D is " +
-                          haversine(positionD).toFixed(2) +
-                          " miles away!" + "</p>";
+    // var outputDiv = document.getElementById("distances");
+    // outputDiv.innerHTML = "<p>Truck A is " +
+    //                       haversine(positionA).toFixed(2) +
+    //                       " miles away!" + "</p>" +
+    //                       "<p>Truck B is " +
+    //                       haversine(positionB).toFixed(2) +
+    //                       " miles away!" + "</p>" +
+    //                       "<p>Truck C is " +
+    //                       haversine(positionC).toFixed(2) +
+    //                       " miles away!" + "</p>" +
+    //                       "<p>Truck D is " +
+    //                       haversine(positionD).toFixed(2) +
+    //                       " miles away!" + "</p>";
+    var truckA = document.getElementById("truckA")
+    var truckB = document.getElementById("truckB")
+    var truckC = document.getElementById("truckC")
+    var truckD = document.getElementById("truckD")
+    truckA.textContent = "Truck A is " + haversine(markerA.position).toFixed(2) + " miles away!";
+    truckB.textContent = "Truck B is " + haversine(markerB.position).toFixed(2) + " miles away!";
+    truckC.textContent = "Truck C is " + haversine(markerC.position).toFixed(2) + " miles away!";
+    truckD.textContent = "Truck D is " + haversine(markerD.position).toFixed(2) + " miles away!";
   }
 }
