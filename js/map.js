@@ -102,9 +102,9 @@ function mapInit () {
     var truckB = document.getElementById("truckB")
     var truckC = document.getElementById("truckC")
     var truckD = document.getElementById("truckD")
-    truckA.textContent = "Truck A is " + haversine(markerA.position).toFixed(2) + " miles away!";
-    truckB.textContent = "Truck B is " + haversine(markerB.position).toFixed(2) + " miles away!";
-    truckC.textContent = "Truck C is " + haversine(markerC.position).toFixed(2) + " miles away!";
-    truckD.textContent = "Truck D is " + haversine(markerD.position).toFixed(2) + " miles away!";
+    truckA.textContent = "Truck A is " + haversine(positionA).toFixed(2) + " miles away!";
+    truckB.textContent = "Truck B is " + haversine(positionB).toFixed(2) + " miles away!";
+    truckC.textContent = "Truck C is " + haversine(positionC).toFixed(2) + " miles away!";
+    truckD.textContent = "Truck D is " + haversine(positionD).toFixed(2) + " miles away!";
   }
 }
