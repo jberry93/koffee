@@ -10,9 +10,6 @@ gulp.task("nodemon", function() {
     .on("start", function() {
       console.log("Started express app!");
     })
-    .on("change", function() {
-      console.log("Changes have been made!");
-    })
     .on("restart", function() {
       console.log("Restarted express app!");
     });
@@ -27,4 +24,4 @@ gulp.task("watch", function() {
   gulp.watch("*.js", ["test"]);
 });
 
-gulp.task("default", ["nodemon", "test", "watch"]);
+gulp.task("default", ["nodemon", "watch", "test"]);
