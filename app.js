@@ -1,18 +1,28 @@
 var express = require("express"),
-    app = express();
+    app = express(),
+    path = require("path");
 
-app.get("/200", function(request, response) {
-  response.sendStatus(200);
+app.get("/", function(request, response) {
+  response.sendFile(path.join(__dirname + "/public/html/index.html"));
+});
+app.get("/order", function(request, response) {
+  response.sendFile(path.join(__dirname + "/public/html/order.html"));
+});
+app.get("/map", function(request, response) {
+  response.sendFile(path.join(__dirname + "/public/html/map.html"));
+});
+app.get("/how-it-works", function(request, response) {
+  response.sendFile(path.join(__dirname + "/public/html/howitworks.html"));
+});
+app.get("/menu", function(request, response) {
+  response.sendFile(path.join(__dirname + "/public/html/menu.html"));
+});
+app.get("/careers", function(request, response) {
+  response.sendFile(path.join(__dirname + "/public/html/careers.html"));
 });
 
-app.get("/404", function(request, response) {
-  response.sendStatus(404);
-})
+app.use(express.static("public"));
 
-app.get("/user", function(request, response) {
-  response.send("hello user!");
-});
+app.listen(8080);
 
-app.listen(1337);
-
-console.log("listening on fancy port 1337!");
+console.log("Listening on boring port 8080!");
