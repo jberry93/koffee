@@ -3,6 +3,8 @@ var gulp = require("gulp"),
     uglify = require("gulp-uglify"),
     minHTML = require("gulp-minify-html"),
     minCSS = require("gulp-minify-css"),
+    minImage = require("gulp-imagemin"),
+    pngquant = require("imagemin-pngquant"),
     mocha = require("gulp-mocha");
 
 gulp.task("nodemon", function() {
@@ -40,6 +42,14 @@ gulp.task("minHTML", function() {
 gulp.task("minCSS", function() {
   return gulp.src("public/css/*.css")
     .pipe(minCSS())
+    .pipe(gulp.dest("public/dist/"));
+});
+
+gulp.task("minImage", function() {
+  return gulp.src("public/images/*")
+    .pipe(minImage({
+      use: [pngquant()]
+    }))
     .pipe(gulp.dest("public/dist/"));
 });
 
