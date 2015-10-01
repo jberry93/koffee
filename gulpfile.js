@@ -1,5 +1,6 @@
 var gulp = require("gulp"),
     nodemon = require("gulp-nodemon"),
+    uglify = require("gulp-uglify"),
     mocha = require("gulp-mocha");
 
 gulp.task("nodemon", function() {
@@ -20,6 +21,12 @@ gulp.task("test", function() {
 
 gulp.task("watch", function() {
   gulp.watch("*.js", ["test"]);
+});
+
+gulp.task("uglify", function() {
+  return gulp.src("public/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("public/dist/"));
 });
 
 gulp.task("default", ["nodemon", "watch"]);

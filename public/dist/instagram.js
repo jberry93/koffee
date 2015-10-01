@@ -1,0 +1,1 @@
+function callbackFunction(i){for(var a=document.getElementById("coffeePics"),e=0;8>e;e++)a.innerHTML+="<li><a href='"+i.data[e].link+"'><img src='"+i.data[e].images.low_resolution.url+"'></img></a></li>"}
