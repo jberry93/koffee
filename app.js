@@ -3,25 +3,25 @@ var express = require("express"),
     path = require("path");
 
 app.get("/", function(request, response) {
-  response.sendFile(path.join(__dirname + "/public/html/index.html"));
+  response.sendFile(path.join(__dirname + "/public/dist/index.html"));
 });
 app.get("/order", function(request, response) {
-  response.sendFile(path.join(__dirname + "/public/html/order.html"));
+  response.sendFile(path.join(__dirname + "/public/dist/order.html"));
 });
 app.get("/map", function(request, response) {
-  response.sendFile(path.join(__dirname + "/public/html/map.html"));
+  response.sendFile(path.join(__dirname + "/public/dist/map.html"));
 });
 app.get("/how-it-works", function(request, response) {
-  response.sendFile(path.join(__dirname + "/public/html/howitworks.html"));
+  response.sendFile(path.join(__dirname + "/public/dist/howitworks.html"));
 });
 app.get("/menu", function(request, response) {
-  response.sendFile(path.join(__dirname + "/public/html/menu.html"));
+  response.sendFile(path.join(__dirname + "/public/dist/menu.html"));
 });
 app.get("/careers", function(request, response) {
-  response.sendFile(path.join(__dirname + "/public/html/careers.html"));
+  response.sendFile(path.join(__dirname + "/public/dist/careers.html"));
 });
 
-app.use(express.static("public"));
+app.use(express.static("public/dist"));
 
 app.listen(8080);
 
