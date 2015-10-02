@@ -5,6 +5,8 @@ var gulp = require("gulp"),
     minCSS = require("gulp-minify-css"),
     minImage = require("gulp-imagemin"),
     pngquant = require("imagemin-pngquant"),
+    browserify = require("browserify"),
+    browserSync = require("browser-sync").create(),
     mocha = require("gulp-mocha");
 
 gulp.task("nodemon", function() {
@@ -23,11 +25,7 @@ gulp.task("test", function() {
     .pipe(mocha());
 });
 
-gulp.task("watch", function() {
-  gulp.watch("*.js", ["test"]);
-});
-
-gulp.task("uglify", function() {
+gulp.task("uglify-js", function() {
   return gulp.src("public/js/*.js")
     .pipe(uglify())
     .pipe(gulp.dest("public/dist/"));
@@ -53,4 +51,12 @@ gulp.task("minImage", function() {
     .pipe(gulp.dest("public/dist/"));
 });
 
-gulp.task("default", ["nodemon", "watch"]);
+gulp.task("browser-sync", ["uglify-js"], function() {
+  browserSync.init({
+    server: {
+      baseDir: "public/dist"
+    }
+  });
+});
+
+gulp.task("default", ["browser-sync"]);
