@@ -7,4 +7,5 @@ gulp.task("test", function() {
     .pipe(mocha());
 });
 
-gulp.task("default", ["browser-sync"]);
+// gulp.task("default", ["minHTML", "browser-sync"]);
+gulp.task("default", ["minHTML", "browser-sync"]);
