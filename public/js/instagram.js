@@ -4,7 +4,7 @@ function callbackFunction(instaData) {
     coffeePics.innerHTML += "<li><a href='" +
                             instaData.data[pic].link +
                             "'><img src='" +
-                            instaData.data[pic].images.low_resolution.url + 
+                            instaData.data[pic].images.low_resolution.url +
                             "'></img></a></li>";
   }
 }

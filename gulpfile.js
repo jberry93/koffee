@@ -8,4 +8,4 @@ gulp.task("test", function() {
 });
 
 // gulp.task("default", ["minHTML", "browser-sync"]);
-gulp.task("default", ["minHTML", "browser-sync"]);
+gulp.task("default", ["browser-sync"]);
