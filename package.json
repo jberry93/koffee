@@ -30,6 +30,7 @@
     "imagemin-pngquant": "^4.2.0",
     "pngquant": "^0.6.0",
     "require-dir": "^0.3.0",
-    "supertest": "^1.1.0"
+    "supertest": "^1.1.0",
+    "wiredep": "^3.0.0-beta"
   }
 }
